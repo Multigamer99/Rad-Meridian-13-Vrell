@@ -18,7 +18,6 @@ map mammoth
 	#default
 	minplayers 0
 	#voteweight 0.5
-	disabled
 endmap
 
 map minimammoth
@@ -26,7 +25,6 @@ map minimammoth
 	minplayers 0
 	#voteweight 0.5
     votable
-	disabled
 endmap
 
 map drought
@@ -39,17 +37,14 @@ endmap
 map combatarena
 	minplayers 0
 	#voteweight 0.5
-	disabled
 endmap
 
 map combatarena_snow
 	minplayers 0
 	#voteweight 0.5
-	disabled
 endmap
 
 map combatarena_desert
 	minplayers 0
 	#voteweight 0.5
-	disabled
 endmap
