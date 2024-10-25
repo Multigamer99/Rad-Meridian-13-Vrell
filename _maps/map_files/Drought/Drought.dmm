@@ -393,9 +393,6 @@
 	},
 /turf/open/floor/plating/ms13/ground/desertalt,
 /area/ms13/desert)
-"arM" = (
-/turf/open/ms13/water/flowing,
-/area/ms13/desert)
 "arQ" = (
 /obj/structure/ms13/wall_decor/flag/arizona,
 /obj/structure/table/ms13/no_smooth/metal,
@@ -5197,11 +5194,6 @@
 /obj/effect/spawner/random/ms13/drink/alcohol,
 /turf/open/floor/wood/ms13/carpet/shaggy,
 /area/ms13/town)
-"eSf" = (
-/turf/open/ms13/water/flowing{
-	dir = 4
-	},
-/area/ms13/desert)
 "eSz" = (
 /obj/structure/lattice/catwalk/ms13,
 /obj/structure/railing/ms13/sewer{
@@ -7645,11 +7637,6 @@
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/ms13/concrete,
 /area/ms13/town)
-"hsx" = (
-/turf/open/ms13/water/flowing{
-	dir = 1
-	},
-/area/ms13/desert)
 "hsY" = (
 /obj/structure/table/ms13/metal/grate,
 /obj/effect/spawner/random/ms13/smokeable,
@@ -23235,11 +23222,6 @@
 	},
 /turf/open/floor/wood/ms13/common,
 /area/ms13/town)
-"wRb" = (
-/turf/open/ms13/water/flowing{
-	dir = 8
-	},
-/area/ms13/desert)
 "wRs" = (
 /obj/machinery/door/unpowered/ms13/wood{
 	dir = 8
@@ -27480,7 +27462,7 @@ oSt
 vBv
 vBv
 oSs
-wRb
+oSs
 oSs
 iBf
 eQU
@@ -27682,7 +27664,7 @@ crx
 oGG
 vBv
 oSs
-wRb
+oSs
 oSs
 iBf
 roo
@@ -27884,7 +27866,7 @@ crx
 crx
 vBv
 oSs
-wRb
+oSs
 oSs
 iBf
 ymc
@@ -28086,7 +28068,7 @@ vBv
 vBv
 vBv
 hgp
-wRb
+hgp
 hgp
 iBf
 gdL
@@ -28483,11 +28465,11 @@ hgp
 hgp
 hgp
 wIw
-hsx
-hsx
-hsx
-hsx
-hsx
+hgp
+hgp
+hgp
+hgp
+hgp
 hgp
 hgp
 hgp
@@ -28692,7 +28674,7 @@ hgp
 hgp
 hgp
 hgp
-eSf
+hgp
 hgp
 qTW
 qTW
@@ -28894,7 +28876,7 @@ hgp
 hgp
 hgp
 hgp
-eSf
+hgp
 hgp
 hgp
 oSs
@@ -29096,7 +29078,7 @@ hgp
 hgp
 hgp
 hgp
-eSf
+hgp
 hgp
 oSs
 oSs
@@ -29291,14 +29273,14 @@ dnU
 det
 vBv
 oSs
-arM
-arM
-arM
-arM
-wRb
+oSs
+hgp
+hgp
+hgp
+hgp
 oqM
 hgp
-eSf
+hgp
 hgp
 hgp
 oSs
