@@ -391,7 +391,7 @@
 
 	if(prob(SHROOM_WEIGHT))
 		randPlant = pick_weight(MUSHROOM_SPAWN_LIST)
-		turfPlant = new randPlant(src)
+		if(randPlant != null && src != null) turfPlant = new randPlant(src) //Vrell - null checks, for safety. Since apparently we need those. TODO - DOUBLE CHECK IF THIS IS ACTUALLY THE FIX OR IF THERE IS SOME OTHER THING WRONG WITH THIS!!!
 	. = TRUE //in case we ever need this to return if we spawned
 	return .
 
