@@ -643,6 +643,8 @@
 	var/next_splash = 1
 	var/atom/watereffect = /obj/effect/overlay/ms13/water/medium
 	var/atom/watertop = /obj/effect/overlay/ms13/water/top/medium
+	var/atom/watereffectref
+	var/atom/watertopref
 	var/depth = 0
 	var/coldness = -100
 	var/list/fish = list(/obj/item/food/meat/slab/ms13/fish/sockeye = 1,
@@ -721,23 +723,27 @@ GLOBAL_VAR(FishPopNextCalc)
 	depth = 2
 
 /turf/open/ms13/water/shallow
-	icon_state = "water_shallow"
-	baseturfs = /turf/open/ms13/water/shallow
-	watereffect = /obj/effect/overlay/ms13/water/shallow
-	watertop = /obj/effect/overlay/ms13/water/top/shallow
-	depth = 1
+	/turf/open/ms13/water
 
 /turf/open/ms13/water/Initialize()
 	. = ..()
-	new watereffect(src)
-	new watertop(src)
+	//Vrell - I'm like 50% sure this is the source of a memory leak but this is how it was originally so I'm not fucking with it rn.
+	watereffectref = new watereffect(src)
+	watertopref = new watertop(src)
+
+/turf/open/ms13/water/Destroy()
+	. = ..()
+	if(watereffectref)
+		QDEL_NULL(watereffectref)
+	if(watertopref)
+		QDEL_NULL(watertopref)
 
 /obj/effect/overlay/ms13/water
 	name = "water"
 	icon = 'mojave/icons/turf/water.dmi'
 	density = FALSE
 	mouse_opacity = 0
-	layer = TURF_LAYER_WATER
+	layer = TURF_LAYER_WATER_UNDER
 	plane = FLOOR_PLANE
 	anchored = TRUE
 
@@ -750,8 +756,8 @@ GLOBAL_VAR(FishPopNextCalc)
 /obj/effect/overlay/ms13/water/shallow
 	icon_state = "water_shallow_bottom"
 
-/obj/effect/overlay/ms13/water/top
-	layer = TURF_LAYER_WATER_UNDER
+/obj/effect/overlay/ms13/water/top //Vrell - originally this was assigned to over but I want this to look NICE so we are doing this the roguecode way.
+	layer = TURF_LAYER_WATER //Vrell - returned to default for now.
 
 /obj/effect/overlay/ms13/water/top/deep
 	icon_state = "water_deep_top"
@@ -822,6 +828,17 @@ GLOBAL_VAR(FishPopNextCalc)
 
 /turf/open/ms13/water/Exited(atom/movable/gone, direction)
 	..()
+	//Vrell - Making it so water resets to a blank slate when you are not on it.
+	/* Vrell - Removed for now. We make it look more like rogue later.
+	if(watereffectref)
+		if(get_dir(src, direction) == SOUTH) //Case where we need to clear the tile we are on immediately. AKA, going down.
+			watereffectref.layer = TURF_LAYER_WATER_UNDER
+		else //Case where we need to clear the tile we are on only after we leave.
+			spawn(6) //Not sure what the magic number here is.
+				if(gone.loc == src)
+					watereffectref.layer = TURF_LAYER_WATER_UNDER
+	*/
+
 	if(isliving(gone))
 		var/mob/living/M = gone
 		if(!iswater(get_step(src, direction)))
@@ -831,6 +848,17 @@ GLOBAL_VAR(FishPopNextCalc)
 
 /turf/open/ms13/water/Entered(atom/A, turf/OL)
 	..()
+	//Vrell - Making it so water doesn't render over you when going upward.
+	/* Vrell - Removed for now. We make it look more like rogue later.
+	if(watereffectref)
+		if(OL && (get_dir(src, OL) != SOUTH)) // Case for instant changing. AKA, when not coming from below.
+			watereffectref.layer = TURF_LAYER_WATER
+		else // Case for delayed spawning. AKA, when coming from below.
+			spawn(6) //Not sure what the magic number here is.
+				if(A.loc == src)
+					watereffectref.layer = TURF_LAYER_WATER
+	*/
+
 	for(var/obj/structure/lattice/catwalk/C in get_turf(A))
 		return
 
@@ -974,6 +1002,112 @@ GLOBAL_VAR(FishPopNextCalc)
 
 /obj/effect/overlay/ms13/sewer/top/shallow
 	icon_state = "sewer_shallow_top"
+
+/turf/open/ms13/water/flowing
+	name = "flowing water"
+	desc = "Cold dirty flowing water."
+	icon_state = "water_flowing_medium"
+	baseturfs = /turf/open/ms13/water/flowing
+	watereffect = /obj/effect/overlay/ms13/water/flowing
+	watertop = /obj/effect/overlay/ms13/water/top/flowing
+	depth = 2
+	var/flow_delay = 4 //Vrell - Delay in decaseconds of water flow. Water flows in the direction the tile is oriented in through its dir variable.
+	var/flow_processing //Vrell - Used for water flowing logic.
+
+/turf/open/ms13/water/flowing/deep
+	name = "deep flowing water"
+	desc = "Cold dirty flowing water, it looks pretty deep."
+	icon_state = "water_flowing_deep"
+	baseturfs = /turf/open/ms13/water/flowing/deep
+	watereffect = /obj/effect/overlay/ms13/water/flowing/deep
+	watertop = /obj/effect/overlay/ms13/water/top/flowing/deep
+	depth = 3
+
+/turf/open/ms13/water/flowing/sewer
+	name = "flowing sewage"
+	desc = "Murky, flowing, and foul smelling water, if you could call it that."
+	icon_state = "sewer_flowing_medium"
+	baseturfs = /turf/open/ms13/water/flowing/sewer
+	watereffect = /obj/effect/overlay/ms13/water/flowing/sewer
+	watertop = /obj/effect/overlay/ms13/water/top/flowing/sewer
+	depth = 2
+
+/turf/open/ms13/water/flowing/sewer/shallow
+	name = "flowing sewage"
+	desc = "Murky, flowing, and foul smelling water, if you could call it that."
+	icon_state = "sewer_flowing_shallow"
+	baseturfs = /turf/open/ms13/water/flowing/sewer/shallow
+	watereffect = /obj/effect/overlay/ms13/water/flowing/sewer/shallow
+	watertop = /obj/effect/overlay/ms13/water/top/flowing/sewer/shallow
+	depth = 1
+
+/turf/open/ms13/water/flowing/sewer/deep
+	name = "flowing sewage"
+	desc = "Murky, flowing, and foul smelling water, if you could call it that."
+	icon_state = "sewer_flowing_deep"
+	baseturfs = /turf/open/ms13/water/flowing/sewer/deep
+	watereffect = /obj/effect/overlay/ms13/water/flowing/sewer/deep
+	watertop = /obj/effect/overlay/ms13/water/top/flowing/sewer/deep
+	depth = 3
+
+
+/turf/open/ms13/water/flowing/Initialize()
+	.  = ..()
+	set_icon_directions()
+
+/turf/open/ms13/water/flowing/proc/set_icon_directions()
+	if(watereffectref)
+		watereffectref.dir = dir
+	if(watertopref)
+		watertopref.dir = dir
+
+/turf/open/ms13/water/flowing/Entered(atom/movable/AM, atom/oldLoc)
+	. = ..()
+
+	if(isliving(AM) && depth > 1) //Vrell - temporary shit to make rivers actually dangerous.
+	{
+		var/mob/living/user = AM
+		user.Immobilize(flow_delay+1)
+	}
+	
+	if(!flow_processing)
+		flow_processing = addtimer(CALLBACK(src, PROC_REF(process_flow)), flow_delay, TIMER_STOPPABLE)
+
+/turf/open/ms13/water/flowing/proc/process_flow()
+	flow_processing = null
+	for(var/atom/movable/A in contents)
+		if((A.loc == src) && A.has_gravity())
+			A.ConveyorMove(dir)
+
+/obj/effect/overlay/ms13/water/flowing
+	icon_state = "water_flowing_medium_bottom"
+
+/obj/effect/overlay/ms13/water/top/flowing
+	icon_state = "water_flowing_medium_top"
+
+/obj/effect/overlay/ms13/water/flowing/deep
+	icon_state = "water_flowing_deep_bottom"
+
+/obj/effect/overlay/ms13/water/top/flowing/deep
+	icon_state = "water_flowing_deep_top"
+
+/obj/effect/overlay/ms13/water/flowing/sewer
+	icon_state = "sewer_flowing_medium_bottom"
+
+/obj/effect/overlay/ms13/water/top/flowing/sewer
+	icon_state = "sewer_flowing_medium_top"
+
+/obj/effect/overlay/ms13/water/flowing/sewer/deep
+	icon_state = "sewer_flowing_deep_bottom"
+
+/obj/effect/overlay/ms13/water/top/flowing/sewer/deep
+	icon_state = "sewer_flowing_deep_top"
+
+/obj/effect/overlay/ms13/water/flowing/sewer/shallow
+	icon_state = "sewer_flowing_shallow_bottom"
+
+/obj/effect/overlay/ms13/water/top/flowing/sewer/shallow
+	icon_state = "sewer_flowing_shallow_top"
 
 ////Openspace////
 

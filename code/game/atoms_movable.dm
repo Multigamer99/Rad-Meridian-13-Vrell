@@ -1283,6 +1283,10 @@
 	return language_holder.update_atom_languages(src)
 
 /* End language procs */
+/atom/movable/proc/ConveyorMove(movedir)
+	set waitfor = FALSE
+	if(!anchored && has_gravity())
+		step(src, movedir)
 
 //Returns an atom's power cell, if it has one. Overload for individual items.
 /atom/movable/proc/get_cell()
