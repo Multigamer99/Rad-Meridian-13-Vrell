@@ -1006,7 +1006,8 @@ GLOBAL_VAR(FishPopNextCalc)
 /turf/open/ms13/water/flowing
 	name = "flowing water"
 	desc = "Cold dirty flowing water."
-	icon_state = "water_flowing_medium"
+	icon_state = "water_flowing_medium_dev"
+	var/real_icon_state = "water_flowing_medium"
 	baseturfs = /turf/open/ms13/water/flowing
 	watereffect = /obj/effect/overlay/ms13/water/flowing
 	watertop = /obj/effect/overlay/ms13/water/top/flowing
@@ -1017,7 +1018,8 @@ GLOBAL_VAR(FishPopNextCalc)
 /turf/open/ms13/water/flowing/deep
 	name = "deep flowing water"
 	desc = "Cold dirty flowing water, it looks pretty deep."
-	icon_state = "water_flowing_deep"
+	icon_state = "water_flowing_deep_dev"
+	real_icon_state  = "water_flowing_deep"
 	baseturfs = /turf/open/ms13/water/flowing/deep
 	watereffect = /obj/effect/overlay/ms13/water/flowing/deep
 	watertop = /obj/effect/overlay/ms13/water/top/flowing/deep
@@ -1026,7 +1028,8 @@ GLOBAL_VAR(FishPopNextCalc)
 /turf/open/ms13/water/flowing/sewer
 	name = "flowing sewage"
 	desc = "Murky, flowing, and foul smelling water, if you could call it that."
-	icon_state = "sewer_flowing_medium"
+	icon_state = "sewer_flowing_medium_dev"
+	real_icon_state = "sewer_flowing_medium"
 	baseturfs = /turf/open/ms13/water/flowing/sewer
 	watereffect = /obj/effect/overlay/ms13/water/flowing/sewer
 	watertop = /obj/effect/overlay/ms13/water/top/flowing/sewer
@@ -1035,7 +1038,8 @@ GLOBAL_VAR(FishPopNextCalc)
 /turf/open/ms13/water/flowing/sewer/shallow
 	name = "flowing sewage"
 	desc = "Murky, flowing, and foul smelling water, if you could call it that."
-	icon_state = "sewer_flowing_shallow"
+	icon_state = "sewer_flowing_shallow_dev"
+	real_icon_state = "sewer_flowing_shallow"
 	baseturfs = /turf/open/ms13/water/flowing/sewer/shallow
 	watereffect = /obj/effect/overlay/ms13/water/flowing/sewer/shallow
 	watertop = /obj/effect/overlay/ms13/water/top/flowing/sewer/shallow
@@ -1044,7 +1048,8 @@ GLOBAL_VAR(FishPopNextCalc)
 /turf/open/ms13/water/flowing/sewer/deep
 	name = "flowing sewage"
 	desc = "Murky, flowing, and foul smelling water, if you could call it that."
-	icon_state = "sewer_flowing_deep"
+	icon_state = "sewer_flowing_deep_dev"
+	real_icon_state = "sewer_flowing_deep"
 	baseturfs = /turf/open/ms13/water/flowing/sewer/deep
 	watereffect = /obj/effect/overlay/ms13/water/flowing/sewer/deep
 	watertop = /obj/effect/overlay/ms13/water/top/flowing/sewer/deep
@@ -1052,6 +1057,7 @@ GLOBAL_VAR(FishPopNextCalc)
 
 
 /turf/open/ms13/water/flowing/Initialize()
+	icon_state = real_icon_state;
 	.  = ..()
 	set_icon_directions()
 
