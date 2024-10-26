@@ -1,3 +1,4 @@
+/* Vrell - LEAVING FOR LATER REFERENCE
 #define MS13_WASTELAND		(1<<0)
 
 #define MS13_WASTELANDER		(1<<0)
@@ -51,7 +52,6 @@
 #define MS13_MONMARKSMAN	(1<<7)
 #define MS13_MONPOINTMAN	(1<<8)
 #define MS13_MONCAPT		(1<<9)
-
 
 #define JOB_DISPLAY_ORDER_MS13_WASTELANDER 1
 #define JOB_DISPLAY_ORDER_MS13_NOMAD 2
@@ -131,7 +131,6 @@
 #define JOB_DISPLAY_ORDER_MS13_GLDMNKEEPER 76
 #define JOB_DISPLAY_ORDER_MS13_GLDMNOVER 77
 
-
 #define EXP_TYPE_WASTELAND "Wasteland"
 #define EXP_TYPE_TOWN "Town"
 #define EXP_TYPE_LEGION "Legion"
@@ -143,3 +142,103 @@
 #define EXP_TYPE_DRYLANDERS "Drylanders"
 #define EXP_TYPE_COMBATTEST "Combattest"
 #define EXP_TYPE_GOLDMAN "Goldman Posse"
+*/
+
+#define JOB_DISPLAY_ORDER_MS13_WASTELANDER 01
+
+#define JOB_DISPLAY_ORDER_MS13_DEADRIVER_FARMER 11
+#define JOB_DISPLAY_ORDER_MS13_DEADRIVER_SCAVENGER 12
+#define JOB_DISPLAY_ORDER_MS13_DEADRIVER_ENTREPREANUR 12
+
+#define JOB_DISPLAY_ORDER_MS13_DEADRIVER_CHURCH_BISHOP 21
+#define JOB_DISPLAY_ORDER_MS13_DEADRIVER_CHURCH_FOLLOWER 22
+#define JOB_DISPLAY_ORDER_MS13_DEADRIVER_CHURCH_ACOLYTE 23
+
+#define JOB_DISPLAY_ORDER_MS13_DEADRIVER_LAW_SHERIFF 31
+#define JOB_DISPLAY_ORDER_MS13_DEADRIVER_LAW_DEPUTY 32
+
+#define MS13_WASTELAND		(1<<0)
+
+#define MS13_DEADRIVER			            (1<<1)
+#define MS13_DEADRIVER_FARMER           (1<<0)
+#define MS13_DEADRIVER_SCAVENGER        (1<<1)
+#define MS13_DEADRIVER_ENTREPREANUR     (1<<2)
+#define MS13_DEADRIVER_BEGGAR           (1<<3)
+#define MS13_DEADRIVER_CHURCH			    (1<<2)
+#define MS13_DEADRIVER_CHURCH_BISHOP    (1<<0)
+#define MS13_DEADRIVER_CHURCH_FOLLOWER  (1<<1)
+#define MS13_DEADRIVER_CHURCH_ACOLYTE   (1<<2)
+#define MS13_DEADRIVER_LAW			        (1<<3)
+#define MS13_DEADRIVER_LAW_SHERIFF      (1<<0)
+#define MS13_DEADRIVER_LAW_DEPUTY       (1<<1)
+#define MS13_DEADRIVER_SALOON		        (1<<4)
+#define MS13_DEADRIVER_SALOON_BARKEEP   (1<<0)
+#define MS13_DEADRIVER_SALOON_BARMAID   (1<<1)
+#define MS13_DEADRIVER_POSSE		        (1<<4)
+#define MS13_DEADRIVER_POSSE_RINGLEADER (1<<0)
+#define MS13_DEADRIVER_POSSE_KEEPER     (1<<1)
+#define MS13_DEADRIVER_POSSE_ROADRUNNER (1<<2)
+#define MS13_DEADRIVER_POSSE_POSSE      (1<<3)
+#define MS13_DEADRIVER_POSSE_UNPROVEN   (1<<4)
+#define MS13_DEADRIVER_DINER		        (1<<4)
+#define MS13_DEADRIVER_DINER_CHEF       (1<<0)
+#define MS13_DEADRIVER_DINER_SERVER     (1<<1)
+#define MS13_DEADRIVER_STORE		        (1<<4)
+#define MS13_DEADRIVER_STORE_OWNER      (1<<0)
+#define MS13_DEADRIVER_STORE_ASSISTANT  (1<<1)
+#define MS13_DEADRIVER_MECHANIC		        (1<<4)
+#define MS13_DEADRIVER_MECHANIC_HEAD    (1<<0)
+#define MS13_DEADRIVER_MECHANIC_JUNIOR  (1<<1)
+#define MS13_DEADRIVER_RANCH		        (1<<4)
+#define MS13_DEADRIVER_RANCH_HEAD       (1<<0)
+#define MS13_DEADRIVER_RANCH_SPOUSE     (1<<1)
+#define MS13_DEADRIVER_RANCH_OFFSPRING  (1<<2)
+#define MS13_DEADRIVER_RANCH_HAND       (1<<3)
+
+#define MS13_DRYLANDER			            (1<<5)
+#define MS13_DRYLANDER_CHIEF            (1<<0)
+#define MS13_DRYLANDER_SHAMAN           (1<<1)
+#define MS13_DRYLANDER_HEADTAKER        (1<<2)
+#define MS13_DRYLANDER_HUNTER           (1<<3)
+#define MS13_DRYLANDER_DRYFOLK          (1<<4)
+#define MS13_ADVISORS			            (1<<6)
+#define MS13_ADVISORS_DECANUS           (1<<0)
+#define MS13_ADVISORS_VEXILLARIUS       (1<<1)
+#define MS13_ADVISORS_SCOUT             (1<<2)
+#define MS13_ADVISORS_AUXILIA           (1<<3)
+
+#define MS13_RAIDER 			            (1<<7)
+#define MS13_RAIDER_BOSS                (1<<0)
+#define MS13_RAIDER_ENFORCER            (1<<1)
+#define MS13_RAIDER_SAWBONE             (1<<2)
+#define MS13_RAIDER_RAIDER              (1<<3)
+
+#define MS13_CARAVAN			            (1<<8)
+#define MS13_CARAVAN_MANAGER            (1<<0)
+#define MS13_CARAVAN_ASSISTANT          (1<<1)
+#define MS13_CARAVAN_MERCHANT           (1<<2)
+#define MS13_CARAVAN_GUARD              (1<<3)
+
+#define MS13_NCR    			            (1<<9)
+#define MS13_NCR_STAFFSERGEANT          (1<<0)
+#define MS13_NCR_SERGEANT               (1<<1)
+#define MS13_NCR_MEDIC                  (1<<2)
+#define MS13_NCR_RADIOMAN               (1<<3)
+#define MS13_NCR_TROOPER                (1<<4)
+
+
+#define EXP_TYPE_WASTELAND "Wasteland"
+#define EXP_TYPE_DEADRIVER "Dead River"
+#define EXP_TYPE_DEADRIVER_CHURCH "Dead River Church"
+#define EXP_TYPE_DEADRIVER_LAW "Dead River Sheriff Department"
+#define EXP_TYPE_DEADRIVER_SALOON "Dead River Saloon"
+#define EXP_TYPE_DEADRIVER_POSSE "Dead River Posse"
+#define EXP_TYPE_DEADRIVER_DINER "Dead River Diner"
+#define EXP_TYPE_DEADRIVER_STORE "Dead River General Store"
+#define EXP_TYPE_DEADRIVER_MECHANIC "Dead River Mechanics"
+#define EXP_TYPE_DEADRIVER_RANCH "Dead River Brahmin Ranch"
+#define EXP_TYPE_DRYLANDER "Drylanders"
+#define EXP_TYPE_ADVISORS "Legion Advisors"
+#define EXP_TYPE_RAIDER "Raiders"
+#define EXP_TYPE_CARAVAN "Crimson Caravan"
+#define EXP_TYPE_NCR "NCR Border Guard"
