@@ -173,6 +173,11 @@
 	desc = "A distinctive white shirt and dark pants worn by medical personnel of Snowcrest to easily identify them."
 	icon_state = "followers"
 
+/obj/item/clothing/under/ms13/wasteland/followers
+	name = "followers uniform"
+	desc = "A distinctive white shirt and dark pants worn by medical personnel of the Followers of the Appocolypse to easily identify them."
+	icon_state = "followers"
+
 /obj/item/clothing/under/ms13/wasteland/snowcrest/bodyguard
 	name = "snowcrest guard fatigues"
 	desc = "A set of fatigues worn by the guards and protectors of Snowcrest."
@@ -210,6 +215,12 @@
 /obj/item/clothing/under/ms13/wasteland/hubologist
 	name = "hubologists' outfit"
 	desc = "Light hubologist sect robes typically worn under a heavier main preaching robes."
+	icon_state = "hubologist"
+	inhand_icon_state = "ro_suit"
+
+/obj/item/clothing/under/ms13/wasteland/church
+	name = "Churches' outfit"
+	desc = "Light robes typically worn under a heavier main preaching robes."
 	icon_state = "hubologist"
 	inhand_icon_state = "ro_suit"
 

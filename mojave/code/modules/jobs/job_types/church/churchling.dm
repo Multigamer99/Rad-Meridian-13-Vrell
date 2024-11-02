@@ -1,0 +1,24 @@
+/datum/job/ms13/church/churchling
+	title = "Churchling"
+	total_positions = 6
+	spawn_positions = 6
+	supervisors = "The Priest, God, And John Moses Browning"
+	description =  ""
+	forbid = ""
+	enforce = ""
+
+	outfit = /datum/outfit/job/ms13/church/churchling
+
+	display_order = JOB_DISPLAY_ORDER_MS13_CHURCHLING
+
+/datum/outfit/job/ms13/church/churchling
+	name = "_Churchling"
+	jobtype = /datum/job/ms13/church/churchling
+
+	l_pocket =	 /obj/item/stack/ms13/currency/prewar/twenty
+	id =		 /obj/item/card/id/ms13/church/churchling
+	uniform =	 /obj/item/clothing/under/ms13/wasteland/church
+	shoes =		 /obj/item/clothing/shoes/ms13/brownie
+
+/datum/outfit/job/ms13/church/churchling/pre_equip(mob/living/carbon/human/H)
+	..()

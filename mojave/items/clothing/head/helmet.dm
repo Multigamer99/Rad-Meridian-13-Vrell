@@ -418,6 +418,14 @@
 	armor = list("melee" = 25, "bullet" = 20, "laser" = 10, "energy" = 5, "bomb" = 15, "bio" = 10,  "fire" = 10, "acid" = 10, "wound" = 0)
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 
+/obj/item/clothing/head/hooded/ms13/priest
+	name = "Priest hood"
+	desc = "A mysterious hood worn by members of the church."
+	icon_state = "hubologist"
+	inhand_icon_state = "hubologist"
+	armor = list("melee" = 25, "bullet" = 20, "laser" = 10, "energy" = 5, "bomb" = 15, "bio" = 10,  "fire" = 10, "acid" = 10, "wound" = 0)
+	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
+
 /obj/item/clothing/head/ms13/hood/banded
 	name = "banded helmet"
 	desc = "A crude helmet made by placing various banded metal sheets over a hood. Not very comfortable, but offers decent protection from conventional threats."
@@ -1229,6 +1237,27 @@
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
 	has_fov = TRUE
 	fov_angle = 60
+	equip_delay_self = 1.5 SECONDS
+	equip_delay_other = 3 SECONDS
+
+/obj/item/clothing/head/helmet/ms13/riot
+	name = "riot helmet"
+	desc = "A riot helmet."
+	icon_state = "riot"
+	inhand_icon_state = "helmet"
+	subarmor = list(SUBARMOR_FLAGS = NONE, \
+                EDGE_PROTECTION = CLASS2_EDGE, \
+                CRUSHING = CLASS2_CRUSH, \
+                CUTTING = CLASS2_CUT, \
+                PIERCING = CLASS2_PIERCE, \
+                IMPALING = CLASS2_STAB, \
+                LASER = CLASS2_LASER, \
+                ENERGY = CLASS1_PLASMA, \
+                FIRE = CLASS2_FIRE)
+	max_integrity = 325
+	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 35, acid = 0, wound = 5)
+	flags_inv = HIDEEARS|HIDEHAIR
+	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
 	equip_delay_self = 1.5 SECONDS
 	equip_delay_other = 3 SECONDS
 
