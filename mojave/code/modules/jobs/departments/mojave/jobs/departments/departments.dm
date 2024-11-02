@@ -18,6 +18,15 @@
 #define DEPARTMENT_DRYLANDER "Drylanders"
 #define DEPARTMENT_BITFLAG_GOLDMAN (1<<19)
 #define DEPARTMENT_GOLDMAN "Goldman"
+#define DEPARTMENT_BITFLAG_DEADWATERTOWN (1<<20)
+#define DEPARTMENT_DEADWATERTOWN "Deadwater"
+#define DEPARTMENT_BITFLAG_CHURCH (1<<21)
+#define DEPARTMENT_CHURCH "Church"
+#define DEPARTMENT_BITFLAG_RANCH (1<<22)
+#define DEPARTMENT_RANCH "Ranch"
+
+
+
 
 // Fancy name for fancy boys
 /datum/job_department/var/department_full_name = null
@@ -115,6 +124,27 @@
 	department_head = /datum/job/ms13/goldman/ringleader
 	department_experience_type = EXP_TYPE_GOLDMAN
 	department_full_name = "The Goldman Posse"
+
+/datum/job_department/town_deadwater
+	department_name = DEPARTMENT_DEADWATERTOWN
+	department_bitflags = DEPARTMENT_BITFLAG_DEADWATERTOWN
+	department_head = /datum/job/ms13/town_deadwater/deadwater_sheriff
+	department_experience_type = EXP_TYPE_DEADWATERTOWN
+	department_full_name = "Town of Deadwater"
+
+/datum/job_department/church
+	department_name = DEPARTMENT_CHURCH
+	department_bitflags = DEPARTMENT_BITFLAG_CHURCH
+	department_head = /datum/job/ms13/church/priest
+	department_experience_type = EXP_TYPE_CHURCH
+	department_full_name = "The Church"
+
+/datum/job_department/ranch
+	department_name = DEPARTMENT_RANCH
+	department_bitflags = DEPARTMENT_BITFLAG_RANCH
+	department_head = /datum/job/ms13/ranch/brahminbaron
+	department_experience_type = EXP_TYPE_RANCH
+	department_full_name = "The Ranch"
 
 // FLAG DEFINES
 

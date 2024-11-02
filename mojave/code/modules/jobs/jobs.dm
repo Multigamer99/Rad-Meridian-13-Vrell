@@ -98,6 +98,29 @@ GLOBAL_LIST_INIT(combattest_positions, list(
 	"Blue ganger",
 	"Red ganger",))
 
+GLOBAL_LIST_INIT(deadwater_town_positions, list(
+	"Deadwater Sheriff",
+	"Deadwater Deputy",
+	"Deadwater Jailer",
+	"Deadwater Shopkeeper",
+	"Deadwater Shop hand",
+	"Deadwater Shop Guard",
+	"Deadwater Mechanic",
+	"Deadwater Barkeep",
+	"Deadwater Barmaid",
+	"Deadwater Chef",
+	"Deadwater Settler"))
+
+GLOBAL_LIST_INIT(church_positions, list(
+	"Priest",
+	"Follower of the Appocolypse",
+	"Missionary",
+	"Churchling"))
+
+GLOBAL_LIST_INIT(ranch_positions, list(
+	"Brahmin Baron",
+	"Follower of the Appocolypse"))
+
 // job categories for rendering the late join menu
 GLOBAL_LIST_INIT(ms13_position_categories, list(
 	EXP_TYPE_WASTELAND = list("jobs" = wasteland_positions, "color" = "#eec66f"),
@@ -107,6 +130,9 @@ GLOBAL_LIST_INIT(ms13_position_categories, list(
 	EXP_TYPE_RAIDERS = list("jobs" = raiders_positions, "color" = "#30389c"),
 	EXP_TYPE_RANGERS = list("jobs" = ranger_positions, "color" = "#bdbc76"),
 	EXP_TYPE_DROUGHTTOWN = list("jobs" = drought_town_positions, "color" = "#12491a"),
+	EXP_TYPE_DEADWATERTOWN = list("jobs" = deadwater_town_positions, "color" = "#11573f"),
+	EXP_TYPE_CHURCH = list("jobs" = church_positions, "color" = "#1b7fdd"),
+	EXP_TYPE_RANCH = list("jobs" = ranch_positions, "color" = "#c9ba3a"),
 	EXP_TYPE_DRYLANDERS = list("jobs" = drylander_positions, "color" = "#4e2e04"),
 	EXP_TYPE_COMBATTEST = list("jobs" = combattest_positions, "color" = "#4e2e04"),
 	EXP_TYPE_GOLDMAN = list("jobs" = goldman_positions, "color" = "#4e2e04")
@@ -120,6 +146,9 @@ GLOBAL_LIST_INIT(ms13_exp_jobsmap, list(
 	EXP_TYPE_RAIDERS = list("titles" = raiders_positions),
 	EXP_TYPE_RANGERS = list("titles" = ranger_positions),
 	EXP_TYPE_DROUGHTTOWN = list("titles" = drought_town_positions),
+	EXP_TYPE_DEADWATERTOWN = list("titles" = deadwater_town_positions),
+	EXP_TYPE_CHURCH = list("titles" = church_positions),
+	EXP_TYPE_RANCH = list("titles" = ranch_positions),
 	EXP_TYPE_DRYLANDERS = list("titles" = drylander_positions),
 	EXP_TYPE_COMBATTEST = list("titles" = combattest_positions),
 	EXP_TYPE_GOLDMAN = list("titles" = goldman_positions)

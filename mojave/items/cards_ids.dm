@@ -497,3 +497,137 @@
 	desc = "A gold textured gang star, issued to gangers with extensive expertise in the field, with multiple years of ganging behind them."
 	icon_state = "ranger_star"
 	trim = /datum/id_trim/centcom/deathsquad
+
+///////////////////////////////////////////////////////
+////////////////Rad Meridian Roles ////////////////////
+///////////////////////////////////////////////////////
+
+// Deadwater IDs //
+
+/obj/item/card/id/ms13/deadwater/deadwater_settler
+	name = "\improper Settler identification papers"
+	desc = ""
+	assignment = "Deadwater Settler"
+	icon_state = "drought_town"
+
+/obj/item/card/id/ms13/deadwater/deadwater_settler
+
+/obj/item/card/id/ms13/town/citizen/attackby(obj/item/W, mob/user, params)
+	if(istype(W, /obj/item/card/id/ms13/deadwater/deadwater_sheriff))
+		registered_name = stripped_input(user, "Who do you want to designate as a citizen of Deadwater?", , "", MAX_NAME_LEN)
+		to_chat(user, "You scribble [registered_name] for the name on the passport.")
+		update_label()
+	return ..()
+
+/obj/item/card/id/ms13/deadwater/deadwater_chef
+	name = "\improper Chef identification papers"
+	desc = ""
+	assignment = "Deadwater Chef"
+	icon_state = "drought_town"
+
+/obj/item/card/id/ms13/deadwater/deadwater_barmaid
+	name = "\improper Barmaid identification papers"
+	desc = ""
+	assignment = "Deadwater Barmaid"
+	icon_state = "drought_town"
+
+/obj/item/card/id/ms13/deadwater/deadwater_barkeep
+	name = "\improper Barkeep identification papers"
+	desc = ""
+	assignment = "Deadwater Barkeep"
+	icon_state = "drought_town"
+
+/obj/item/card/id/ms13/deadwater/deadwater_mechanic
+	name = "\improper Mechanic identification papers"
+	desc = ""
+	assignment = "Deadwater Mechanic"
+	icon_state = "drought_town"
+
+/obj/item/card/id/ms13/deadwater/deadwater_shopguard
+	name = "\improper Shop Guard identification papers"
+	desc = ""
+	assignment = "Deadwater Shop Guard"
+	icon_state = "drought_town"
+
+/obj/item/card/id/ms13/deadwater/deadwater_shophand
+	name = "\improper Shop Hand identification papers"
+	desc = ""
+	assignment = "Deadwater Shop Hand"
+	icon_state = "drought_town"
+
+/obj/item/card/id/ms13/deadwater/deadwater_shopkeep
+	name = "\improper Shopkeeper identification papers"
+	desc = ""
+	assignment = "Deadwater Shopkeeper"
+	icon_state = "drought_town"
+
+/obj/item/card/id/ms13/deadwater/deadwater_deputy
+	name = "deputy's badge"
+	desc = "A dull silver Deputy's badge. Classic."
+	assignment = "Deadwater Deputy"
+	icon_state = "deputy"
+	access = list(ACCESS_TOWN_LAW, ACCESS_TOWN_DOCTOR, ACCESS_TOWN_WORKER, ACCESS_TOWN_ALL)
+	shows_age = FALSE
+
+/obj/item/card/id/ms13/deadwater/deadwater_deputy/attackby(obj/item/W, mob/user, params)
+	if(istype(W, /obj/item/card/id/ms13/deadwater/deadwater_sheriff))
+		registered_name = stripped_input(user, "Who do you want to designate as your deputy?", , "", MAX_NAME_LEN)
+		to_chat(user, "You scribble [registered_name] for the name on the badge.")
+		update_label()
+	return ..()
+
+/obj/item/card/id/ms13/deadwater/deadwater_jailer
+	name = "jailer's badge"
+	desc = "A dull silver Jailer's badge. Classic."
+	assignment = "Deadwater Jailer"
+	icon_state = "deputy"
+	access = list(ACCESS_TOWN_LAW, ACCESS_TOWN_DOCTOR, ACCESS_TOWN_WORKER, ACCESS_TOWN_ALL)
+	shows_age = FALSE
+
+/obj/item/card/id/ms13/deadwater/deadwater_sheriff
+	name = "sheriff's badge"
+	desc = "A golden Sheriff's badge. Strikes fear into the hearts of wrongdoers."
+	assignment = "Deadwater Sheriff"
+	icon_state = "sheriff"
+	access = list(ACCESS_TOWN_MAYOR, ACCESS_TOWN_LAW, ACCESS_TOWN_DOCTOR, ACCESS_TOWN_WORKER, ACCESS_TOWN_ALL)
+	shows_age = FALSE
+
+// Church IDs //
+
+/obj/item/card/id/ms13/church/priest
+	name = "\improper Priest identification papers"
+	desc = ""
+	assignment = "Priest"
+	icon_state = "drought_town"
+
+/obj/item/card/id/ms13/church/churchling
+	name = "\improper Churchling identification papers"
+	desc = ""
+	assignment = "Churchling"
+	icon_state = "drought_town"
+
+/obj/item/card/id/ms13/church/follower
+	name = "\improper Follower identification papers"
+	desc = ""
+	assignment = "Follower of the Appocolypse"
+	icon_state = "doctor"
+
+/obj/item/card/id/ms13/church/missionary
+	name = "\improper Missionary identification papers"
+	desc = ""
+	assignment = "Missionary"
+	icon_state = "drought_town"
+
+// Ranch IDs //
+
+/obj/item/card/id/ms13/ranch/brahminbaron
+	name = "\improper Brahmin Baron identification papers"
+	desc = ""
+	assignment = "Brahmin Baron"
+	icon_state = "drought_town"
+
+/obj/item/card/id/ms13/ranch/farmhand
+	name = "\improper Farm Hand identification papers"
+	desc = ""
+	assignment = "Farm Hand"
+	icon_state = "drought_town"

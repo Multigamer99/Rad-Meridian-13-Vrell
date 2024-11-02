@@ -260,3 +260,44 @@
 
 /obj/effect/landmark/start/ms13/goldman_ringleader
 	name = "Goldman Ringleader"
+
+
+/////////////////////////////////////////////////////// Rad Meridian Spawns /////////////////////////////////////
+
+// Deadwater Spawns //
+
+/obj/effect/landmark/start/ms13/deadwater_sheriff
+	name = "Deadwater Sheriff"
+
+/obj/effect/landmark/start/ms13/deadwater_deputy
+	name = "Deadwater Deputy"
+
+/obj/effect/landmark/start/ms13/deadwater_jailer
+	name = "Deadwater Jailer"
+
+/obj/effect/landmark/start/ms13/shopkeeper
+	name = "Deadwater Shopkeeper"
+
+/obj/effect/landmark/start/ms13/shophand
+	name = "Deadwater Shop Hand"
+
+/obj/effect/landmark/start/ms13/shopguard
+	name = "Deadwater Shop Guard"
+
+/obj/effect/landmark/start/ms13/mechanic
+	name = "Deadwater Mechanic"
+
+/obj/effect/landmark/start/ms13/barkeep
+	name = "Deadwater Barkeep"
+
+/obj/effect/landmark/start/ms13/barmaid
+	name = "Deadwater Barmaid"
+
+/obj/effect/landmark/start/ms13/chef
+	name = "Deadwater Chef"
+
+/obj/effect/landmark/start/ms13/deadwater_settler
+	name = "Deadwater Settler"
+
+// Church Spawns //
+
