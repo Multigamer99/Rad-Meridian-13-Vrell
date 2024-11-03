@@ -108,6 +108,10 @@
 /obj/machinery/door/unpowered/ms13/wood/green,
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/desert)
+"aF" = (
+/obj/effect/landmark/start/ms13/missionary,
+/turf/open/floor/wood/ms13/fancy,
+/area/ms13/water_baron/interior)
 "aI" = (
 /obj/structure/lattice/catwalk/ms13,
 /obj/machinery/light/ms13/bulb/industrial/broken{
@@ -261,6 +265,7 @@
 /obj/structure/ms13/pipes/horizontal/end{
 	dir = 1
 	},
+/obj/effect/landmark/start/ms13/goldman,
 /turf/open/floor/ms13/concrete/small,
 /area/ms13/underground/underground_town)
 "bK" = (
@@ -425,6 +430,10 @@
 	},
 /turf/open/floor/ms13/tile/large/cafeteria,
 /area/ms13/water_baron/interior)
+"cG" = (
+/obj/effect/landmark/start/ms13/follower,
+/turf/open/floor/wood/ms13/common,
+/area/ms13/underground/underground_town)
 "cH" = (
 /turf/open/floor/ms13/tile,
 /area/ms13/town)
@@ -927,6 +936,10 @@
 "fF" = (
 /obj/effect/spawner/random/ms13/gun/lowrandom,
 /turf/open/floor/ms13/tile/full/black,
+/area/ms13/water_baron/interior)
+"fG" = (
+/obj/effect/landmark/start/ms13/churchling,
+/turf/open/floor/wood/ms13/fancy,
 /area/ms13/water_baron/interior)
 "fH" = (
 /obj/structure/lattice/catwalk/ms13,
@@ -2365,6 +2378,10 @@
 /obj/effect/spawner/random/ms13/gun/tier1,
 /turf/open/floor/ms13/concrete/industrial,
 /area/ms13/town)
+"og" = (
+/obj/effect/landmark/start/ms13/goldman,
+/turf/open/floor/ms13/concrete/small,
+/area/ms13/underground/underground_town)
 "oh" = (
 /obj/structure/ms13/tank,
 /turf/open/floor/ms13/metal/grate,
@@ -2430,6 +2447,10 @@
 	},
 /turf/open/ms13/water/sewer/deep,
 /area/ms13/town)
+"oy" = (
+/obj/effect/landmark/start/ms13/shophand,
+/turf/open/floor/ms13/tile/brown,
+/area/ms13/water_baron/interior)
 "oz" = (
 /obj/structure/ms13/storage/store,
 /obj/effect/spawner/random/ms13/ammo/lowrandom,
@@ -3238,6 +3259,10 @@
 /obj/effect/spawner/random/ms13/locked/random/medchance,
 /turf/open/floor/ms13/tile/large/black,
 /area/ms13/town)
+"tc" = (
+/obj/effect/landmark/start/ms13/barkeep,
+/turf/open/floor/wood/ms13/mosaic,
+/area/ms13/water_baron/interior)
 "te" = (
 /obj/effect/turf_decal/ms13/covering/paint/blue,
 /turf/closed/wall/ms13/brick/alt,
@@ -3746,6 +3771,10 @@
 /obj/structure/table/ms13/low_wall/concrete,
 /turf/open/floor/ms13/tile/large/black,
 /area/ms13/town)
+"we" = (
+/obj/effect/landmark/start/ms13/priest,
+/turf/open/floor/wood/ms13/common,
+/area/ms13/water_baron/interior)
 "wg" = (
 /obj/effect/turf_decal/ms13/covering/tiles/white,
 /turf/closed/wall/ms13/scrap/blue,
@@ -4050,6 +4079,7 @@
 	pixel_x = -8;
 	pixel_y = 11
 	},
+/obj/effect/landmark/start/ms13/goldman_keeper,
 /turf/open/floor/ms13/concrete/small,
 /area/ms13/underground/underground_town)
 "xK" = (
@@ -4526,6 +4556,7 @@
 /obj/machinery/light/ms13{
 	dir = 1
 	},
+/obj/effect/landmark/start/ms13/follower,
 /turf/open/floor/wood/ms13/common,
 /area/ms13/underground/underground_town)
 "AB" = (
@@ -4679,6 +4710,10 @@
 /area/ms13/underground/underground_town)
 "Bs" = (
 /obj/structure/ms13/pipes/horizontal/down,
+/turf/open/floor/ms13/concrete/small,
+/area/ms13/underground/underground_town)
+"Bu" = (
+/obj/effect/landmark/start/ms13/goldman_roadrun,
 /turf/open/floor/ms13/concrete/small,
 /area/ms13/underground/underground_town)
 "Bv" = (
@@ -4943,6 +4978,7 @@
 /area/ms13/water_baron/interior)
 "Dj" = (
 /obj/structure/ms13/sign/open,
+/obj/effect/landmark/start/ms13/shopguard,
 /turf/open/floor/plating/ms13/ground/sidewalk,
 /area/ms13/water_baron)
 "Dk" = (
@@ -5073,6 +5109,10 @@
 	},
 /turf/open/floor/wood/ms13/mosaic,
 /area/ms13/water_baron/interior)
+"DV" = (
+/obj/effect/landmark/start/ms13/goldman_ringleader,
+/turf/open/floor/ms13/concrete/small,
+/area/ms13/underground/underground_town)
 "DW" = (
 /obj/machinery/door/unpowered/ms13/metal{
 	dir = 4
@@ -5379,6 +5419,18 @@
 "Gd" = (
 /turf/closed/wall/ms13/concrete,
 /area/ms13/town)
+"Ge" = (
+/obj/structure/closet/ms13/metal{
+	pixel_x = 8;
+	pixel_y = 20
+	},
+/obj/structure/closet/ms13/metal{
+	pixel_x = -8;
+	pixel_y = 20
+	},
+/obj/effect/landmark/start/ms13/goldman,
+/turf/open/floor/ms13/concrete/small,
+/area/ms13/underground/underground_town)
 "Gh" = (
 /obj/machinery/vending/ms13/nuka/pristine,
 /turf/open/floor/wood/ms13/common,
@@ -5945,6 +5997,10 @@
 /obj/item/clothing/head/helmet/ms13/cowboy,
 /turf/open/floor/wood/ms13/common,
 /area/ms13/water_baron/interior)
+"JP" = (
+/obj/effect/landmark/start/ms13/goldman_unprov,
+/turf/open/floor/ms13/concrete/small,
+/area/ms13/underground/underground_town)
 "JQ" = (
 /obj/structure/ms13/large_pipe/ground,
 /turf/open/floor/plating/ms13/ground/desert,
@@ -6602,6 +6658,10 @@
 /obj/effect/spawner/random/ms13/crafting/electrical,
 /turf/open/floor/ms13/concrete/industrial,
 /area/ms13/town)
+"Ol" = (
+/obj/effect/landmark/start/ms13/barmaid,
+/turf/open/floor/wood/ms13/mosaic,
+/area/ms13/water_baron/interior)
 "Om" = (
 /obj/structure/railing/ms13/sewer{
 	dir = 4
@@ -6634,6 +6694,10 @@
 "Os" = (
 /obj/structure/chair/ms13/wood/padded,
 /turf/open/floor/wood/ms13/common,
+/area/ms13/water_baron/interior)
+"Ou" = (
+/obj/effect/landmark/start/ms13/chef,
+/turf/open/floor/ms13/tile/brown,
 /area/ms13/water_baron/interior)
 "Oy" = (
 /obj/structure/filingcabinet/ms13/busted{
@@ -8157,6 +8221,11 @@
 /obj/structure/chair/sofa/left,
 /turf/open/floor/ms13/concrete/small,
 /area/ms13/underground/underground_town)
+"Xp" = (
+/obj/structure/ms13/rug/mat/rubber,
+/obj/effect/landmark/start/ms13/shopkeeper,
+/turf/open/floor/ms13/tile/full/black,
+/area/ms13/water_baron/interior)
 "Xq" = (
 /obj/structure/ms13/foundation/common/variantfive,
 /turf/open/floor/plating/ms13/ground/mountain/drought,
@@ -8463,6 +8532,10 @@
 	},
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/desert)
+"Zb" = (
+/obj/effect/landmark/start/ms13/mechanic,
+/turf/open/floor/wood/ms13/wide,
+/area/ms13/water_baron/interior)
 "Zd" = (
 /obj/structure/closet/ms13/fridge,
 /turf/open/floor/ms13/tile/large/cafeteria,
@@ -223172,8 +223245,8 @@ nt
 nt
 nt
 bF
-fw
-fw
+JP
+JP
 bF
 nt
 nt
@@ -223524,7 +223597,7 @@ nt
 nt
 nt
 bF
-fw
+JP
 fw
 bF
 nt
@@ -224578,12 +224651,12 @@ nt
 bF
 Qg
 al
-fw
+og
 bF
 Hz
 fw
 bF
-fw
+DV
 bM
 hM
 bF
@@ -224929,7 +225002,7 @@ nt
 nt
 bF
 iw
-fw
+og
 fw
 Re
 fw
@@ -227040,9 +227113,9 @@ bF
 bF
 nt
 bF
-eK
+Ge
 fw
-fw
+og
 Re
 fw
 fw
@@ -229157,7 +229230,7 @@ Xn
 mf
 fw
 fw
-fw
+Bu
 fw
 BH
 fw
@@ -229507,7 +229580,7 @@ bF
 bF
 fw
 fw
-fw
+Bu
 dt
 On
 dI
@@ -231645,7 +231718,7 @@ nt
 nt
 yU
 AA
-Yg
+cG
 xr
 yU
 kb
@@ -331929,7 +332002,7 @@ XS
 XS
 Vc
 CH
-CH
+Ou
 CH
 CH
 CH
@@ -333014,9 +333087,9 @@ zc
 zc
 QD
 sQ
+aF
 ix
-ix
-ix
+aF
 ix
 sQ
 Kc
@@ -333337,7 +333410,7 @@ kG
 kG
 kG
 kG
-kG
+tc
 kG
 iP
 iP
@@ -334774,9 +334847,9 @@ zc
 zc
 OY
 sQ
+fG
 ix
-ix
-ix
+fG
 ix
 LV
 ix
@@ -335792,8 +335865,8 @@ jy
 oS
 fc
 fb
-kG
-kG
+Ol
+Ol
 oS
 In
 MM
@@ -336496,8 +336569,8 @@ jy
 oS
 fc
 fb
-kG
-kG
+Ol
+Ol
 oS
 In
 MM
@@ -345310,7 +345383,7 @@ iC
 mx
 rC
 CH
-CH
+oy
 yw
 Sg
 uh
@@ -345653,7 +345726,7 @@ jy
 PL
 oT
 sg
-cw
+Xp
 cw
 SH
 JF
@@ -350232,7 +350305,7 @@ zc
 zc
 zc
 zc
-zc
+Zb
 zc
 zc
 QD
@@ -350585,7 +350658,7 @@ QD
 QD
 om
 zc
-zc
+Zb
 zc
 Sh
 jE
@@ -444595,7 +444668,7 @@ fM
 sQ
 Rp
 Rp
-Rp
+we
 yq
 jP
 sQ
