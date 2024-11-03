@@ -301,3 +301,21 @@
 
 // Church Spawns //
 
+/obj/effect/landmark/start/ms13/priest
+    name = "Priest"
+
+/obj/effect/landmark/start/ms13/follower
+    name = "Follower of the Apocalypse"
+
+/obj/effect/landmark/start/ms13/missionary
+    name = "Missionary"
+
+/obj/effect/landmark/start/ms13/churchling
+    name = "Churchling"
+
+// Ranch Spawns //
+/obj/effect/landmark/start/ms13/brahminbaron
+    name = "Brahmin Baron"
+
+/obj/effect/landmark/start/ms13/farmhand
+    name = "Farm Hand"
