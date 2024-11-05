@@ -1,7 +1,7 @@
 /datum/job/ms13/town_drought/barkeep
 	title = "Barony Barkeep"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "The Baron and his Enforcers."
 	description = "Tend to the Barony's bar and food services."
 	forbid = ""

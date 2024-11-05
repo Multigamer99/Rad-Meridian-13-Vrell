@@ -21,9 +21,9 @@
 	shoes = /obj/item/clothing/shoes/ms13/brownie
 	suit_store = null
 	r_hand = /obj/item/storage/ms13/toolbox/filled
+	l_hand = /obj/item/gun/ballistic/automatic/pistol/ms13/m9mm
 	r_pocket   = null
 	l_pocket =   null
-	back =       null
 
 /datum/outfit/job/ms13/town_deadwater/mechanic/pre_equip(mob/living/carbon/human/H)
 	..()

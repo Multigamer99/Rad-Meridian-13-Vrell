@@ -1,7 +1,7 @@
 /datum/job/ms13/ranger/elite
 	title = "Elite Desert Ranger"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "The Deputy-Chief"
 	description = "Ensure peace in the region. Collaborate with other Rangers and lead them as needed. Follow the word of the Deputy-Chief."
 

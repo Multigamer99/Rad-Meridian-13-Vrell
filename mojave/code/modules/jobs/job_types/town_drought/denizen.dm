@@ -1,7 +1,7 @@
 /datum/job/ms13/town_drought/denizen
 	title = "Barony Denizen"
-	total_positions = 10
-	spawn_positions = 10
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "The Baron and his Enforcers"
 	description = "You're a resident of the Barony and a humble servant of the Baron! You live a better life here than out in the wastes, under the protection and supervision of the Baron and his Enforcers. Try to make yourself useful in some way, there's work to be done everywhere."
 	forbid = ""

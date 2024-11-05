@@ -1,7 +1,7 @@
 /datum/job/ms13/town_drought/baron
 	title = "The Baron"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "No one but yourself."
 	description = "You are the supreme leader of the Barony. Enact your will as you see fit and navigate the Barony through these changing times however you like. Remember, you answer to no one but yourself!"
 	forbid = ""

@@ -1,7 +1,7 @@
 /datum/job/ms13/goldman/standardgold
 	title = "Goldman"
-	total_positions = 5
-	spawn_positions = 5
+	total_positions = 2
+	spawn_positions = 2
 	supervisors = "The Ringleader and the Keeper."
 	description = "Stay in line and listen to your superiors. Expand the influence and profits of the Goldman posse. Abide by established agreements and patrol the highways."
 

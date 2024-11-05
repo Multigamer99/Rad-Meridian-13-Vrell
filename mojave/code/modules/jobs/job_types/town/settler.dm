@@ -1,7 +1,7 @@
 /datum/job/ms13/town/settler
 	title = "Snowcrest Citizen"
-	total_positions = 8
-	spawn_positions = 8
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "NCR law enforcement, the Mayor and his bodyguards"
 	description = "You're a lucky resident of Snowcrest! You've made a nice life for yourself and enjoy the luxuries of civilization in the post-apocalypse. Try to make yourself useful in some way, there's work to be done everywhere."
 	forbid = ""

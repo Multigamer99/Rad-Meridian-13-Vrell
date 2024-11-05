@@ -1,7 +1,7 @@
 /datum/job/ms13/town/mayor
 	title = "Snowcrest Mayor"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "The best interests of Snowcrest and it's citizens."
 	description = "At long last you are the Mayor of Snowcrest! Make the decisions and organize the town the way you see fit to allow it to prosper!"
 	forbid = ""

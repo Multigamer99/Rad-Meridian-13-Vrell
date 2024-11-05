@@ -1,7 +1,7 @@
 /datum/job/ms13/town/bartender
 	title = "Snowcrest Bartender"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "The Mayor"
 	description = "Tend to Snowcrest's bar and food services."
 	forbid = ""

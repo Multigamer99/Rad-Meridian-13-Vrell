@@ -1,7 +1,7 @@
 /datum/job/ms13/ranger/deputychief
 	title = "Desert Ranger Deputy-Chief"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "The Ranger Chief, if present."
 	description = "Ensure peace in the region. Lead your outpost fairly and protect the wasteland. Aid those in need."
 

@@ -1,7 +1,7 @@
 /datum/job/ms13/town/sheriff
 	title = "Town Sheriff"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "The Mayor."
 	description = "Enforce the Mayor's law upon the Town with the assistance of your Deputies."
 	forbid = ""

@@ -1,7 +1,7 @@
 /datum/job/ms13/goldman/unproven
 	title = "Goldman Unproven"
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 2
+	spawn_positions = 2
 	supervisors = "Proper Goldman, the Ringleader and the Kepper."
 	description = "Stay in line and listen to your superiors. Prove yourself to the goldman. Make yourself useful to the group. Make a name for yourself, somewhat literally."
 

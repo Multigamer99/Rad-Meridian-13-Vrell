@@ -1,7 +1,7 @@
 /datum/job/ms13/town/nurse
 	title = "Snowcrest Nurse"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "The Doctor and the Mayor"
 	description = "Assist the Snowcrest medical staff in whatever they may need."
 	forbid = ""

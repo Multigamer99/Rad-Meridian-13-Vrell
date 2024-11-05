@@ -1,7 +1,7 @@
 /datum/job/ms13/raiders/mon_grunt
 	title = "Mon City Grunt"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "The Captain"
 	description = "Work with the rest of your mercenary squad and follow the orders of your Captain in an effort to find work and most importantly establish yourselves in Mammoth. The fate of the company is riding on your shoulders."
 	forbid = ""

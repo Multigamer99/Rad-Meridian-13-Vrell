@@ -1,7 +1,7 @@
 /datum/job/ms13/raiders/raider
 	title = "Raider"
-	total_positions = 10
-	spawn_positions = 10
+	total_positions = 5
+	spawn_positions = 5
 	supervisors = "The Boss and the Enforcer"
 	description = "Follow the Boss' orders and listen to the Enforcer. Do whatever he says with questionable proficiency."
 	forbid = ""

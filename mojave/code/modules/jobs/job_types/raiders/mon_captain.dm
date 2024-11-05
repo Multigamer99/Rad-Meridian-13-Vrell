@@ -1,7 +1,7 @@
 /datum/job/ms13/raiders/mon_captain
 	title = "Mon City Captain"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "The Major, if present"
 	description = "Organize your mercs to establish a foothold in the region of Mammoth and find some work to start working on rebuilding the Mon City Mercs. The fate of the company is riding on your shoulders."
 	forbid = ""

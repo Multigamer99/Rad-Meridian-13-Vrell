@@ -1,7 +1,7 @@
 /datum/job/ms13/raiders/slicker
 	title = "Slickback"
-	total_positions = 5
-	spawn_positions = 5
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "The Underboss"
 	description = "Follow the Underboss' orders and work to expand the Slickbacks' operations in the region. Peddle, push, and profit!"
 	forbid = ""

@@ -1,7 +1,7 @@
 /datum/job/ms13/town/squatter
 	title = "Snowcrest Squatter"
-	total_positions = -1
-	spawn_positions = -1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "NCR law enforcement, the Mayor and his bodyguards"
 	description = "You're a not so lucky resident of Snowcrest! Whether you are residing in Snowcrest legally or not isn't important. You don't have much to your name and most of Snowcrest and the NCR garrison views you with contempt and disdain. Just try and survive, maybe even make a living."
 	forbid = ""

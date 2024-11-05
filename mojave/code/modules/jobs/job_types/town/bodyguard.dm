@@ -1,7 +1,7 @@
 /datum/job/ms13/town/bodyguard
 	title = "Snowcrest Bodyguard"
-	total_positions = 4
-	spawn_positions = 4
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "The Mayor"
 	description = "You're a carefully selected and trained bodyguard of the Mayor of Snowcrest! Ensure the safety of the Mayor first, and the overall town of Snowcrest second. You answer solely to the Mayor and should carry out their will and orders as needed."
 	forbid = ""

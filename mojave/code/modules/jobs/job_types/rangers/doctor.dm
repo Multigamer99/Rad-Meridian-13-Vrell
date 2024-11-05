@@ -1,7 +1,7 @@
 /datum/job/ms13/ranger/rdoctor
 	title = "Desert Ranger Doctor"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "The Rangers"
 	description = "A doctor working alongside the Rangers in order to aid the public when needed. Maintain health of the Rangers and any bystanders."
 

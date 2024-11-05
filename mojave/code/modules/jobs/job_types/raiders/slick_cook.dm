@@ -1,7 +1,7 @@
 /datum/job/ms13/raiders/slick_cook
 	title = "Slickback Cook"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "The Slickbacks"
 	description = "You are a drug cook for the Slickbacks. Not quite an actual, respected member of the gang but instead more of a lackey with the knowledge to make their chems so the gang can turn a profit, and some medical experience to tend their wounds."
 	forbid = ""

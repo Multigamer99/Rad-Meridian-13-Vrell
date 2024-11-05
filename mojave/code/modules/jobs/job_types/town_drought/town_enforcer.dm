@@ -1,7 +1,7 @@
 /datum/job/ms13/town_drought/enforcer
 	title = "Barony Enforcer"
-	total_positions = 5
-	spawn_positions = 5
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "The Great Baron"
 	description = "You are a loyal and humble servant of the Baron! Ensure his will is carried out to the fullest extent and above all ensure his safety."
 	forbid = ""

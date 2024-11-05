@@ -1,7 +1,7 @@
 /datum/job/ms13/goldman/roadrunner
 	title = "Goldman Road Runner"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	supervisors = "The Ringleader and the Keeper."
 	description = "Stay in line and listen to your superiors. Ensure messages are delivered as needed and the nearby region is well travelled and scouted. Abide by established agreements and patrol the highways."
 

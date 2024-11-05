@@ -1,7 +1,7 @@
 /datum/job/ms13/legion/centurion
 	title = "Legion Centurion"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "The Legate, if present. And Caesar himself."
 	description = "Command your Centuria, leading them to glorious victory at all costs."
 	enforce = "The Legion expects you to lead them effectively. Do not be a coward."

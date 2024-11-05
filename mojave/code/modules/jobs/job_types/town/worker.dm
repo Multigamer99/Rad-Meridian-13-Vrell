@@ -1,7 +1,7 @@
 /datum/job/ms13/town/worker
 	title = "Snowcrest Worker"
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "The Mayor"
 	description = "Provide vital labor for Snowcrest in the form of production, construction, engineering, maintenance. You name it!"
 	forbid = ""

@@ -1,7 +1,7 @@
 /datum/job/ms13/wasteland/nomad // Drought wastelander
 	title = "Nomad"
-	total_positions = -1 //infinite
-	spawn_positions = -1 //infinite
+	total_positions = 3 //infinite
+	spawn_positions = 3 //infinite
 	supervisors = "No one"
 	description = "Survive. Attempt to outlive the harsh sun above you. Collaborate with your fellow man or remain distant. Ensure your own survival."
 	forbid = ""

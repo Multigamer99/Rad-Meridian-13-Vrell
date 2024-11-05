@@ -1,7 +1,7 @@
 /datum/job/ms13/ranger/sharpshooter
 	title = "Desert Ranger Sharpshooter"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "A Deputy-Chief, if present."
 	description = "Scout the region and provide aid to the downtrodden and needy when possible. Establish friendly relations with the locals."
 

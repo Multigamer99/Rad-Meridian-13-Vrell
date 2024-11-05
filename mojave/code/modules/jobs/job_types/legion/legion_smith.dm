@@ -1,7 +1,7 @@
 /datum/job/ms13/legion/legion_smith
 	title = "Legion Blacksmith"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "The Veteran Decanus"
 	description = "Ensure your fellow Legionaries are properly supplied and armed for the fights to come. Listen to orders from the Decanus."
 

@@ -1,7 +1,7 @@
 /datum/job/ms13/legion/recruitlegionary
 	title = "Recruit Legionary"
-	total_positions = 4
-	spawn_positions = 4
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "The Centurion and the Recruit Decanus"
 	description = "Fight in the name of Caesar, and claim the lands for the Bull! Listen to your superiors, they will guide you to victory."
 
