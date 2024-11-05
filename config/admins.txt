@@ -8,3 +8,5 @@ Jeonsa = Host
 RichPiana = Senior Admin
 saltspider = Trial Moderator
 elianore = Head Admin
+OfficialN30 = Co-Host
+ConstantineIII = Admin

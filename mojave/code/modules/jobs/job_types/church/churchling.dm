@@ -19,6 +19,7 @@
 	id =		 /obj/item/card/id/ms13/church/churchling
 	uniform =	 /obj/item/clothing/under/ms13/wasteland/church
 	shoes =		 /obj/item/clothing/shoes/ms13/brownie
+	belt = /obj/item/gun/ballistic/automatic/pistol/ms13/pistol45
 
 /datum/outfit/job/ms13/church/churchling/pre_equip(mob/living/carbon/human/H)
 	..()

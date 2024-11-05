@@ -18,6 +18,7 @@
 	id =		 /obj/item/card/id/ms13/deadwater/deadwater_barmaid
 	uniform =    /obj/item/clothing/under/ms13/wasteland/rag
 	shoes =  	 /obj/item/clothing/shoes/ms13/rag
+	belt = /obj/item/gun/ballistic/revolver/ms13/derringer
 
 /datum/outfit/job/ms13/town_deadwater/barmaid/pre_equip(mob/living/carbon/human/H)
 	..()

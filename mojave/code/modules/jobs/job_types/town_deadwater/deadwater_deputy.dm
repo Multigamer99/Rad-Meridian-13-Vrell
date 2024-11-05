@@ -16,22 +16,18 @@
 	jobtype = /datum/job/ms13/town_deadwater/deadwater_deputy
 
 	id = 		 /obj/item/card/id/ms13/deadwater/deadwater_deputy
-	head =		 /obj/item/clothing/head/helmet/ms13/deputy
-	suit =       /obj/item/clothing/suit/armor/ms13/vest/vault
-	uniform =    /obj/item/clothing/under/ms13/wasteland/cowboy/tan
-	shoes =  	 /obj/item/clothing/shoes/ms13/military/vault
-	suit_store = /obj/item/gun/ballistic/shotgun/ms13/lever/cowboy
-	belt = 		 /obj/item/gun/ballistic/automatic/pistol/ms13/m10mm
-	r_pocket =	 /obj/item/ammo_box/magazine/ms13/m10mm
-	l_pocket =   /obj/item/stack/ms13/currency/prewar/eighty
-	back =       /obj/item/storage/ms13/vault
-	backpack_contents = list(
-		/obj/item/stack/medical/gauze/ms13/three=1, \
-		/obj/item/clothing/head/helmet/ms13/vaulthelmet=1, \
-		/obj/item/claymore/ms13/baton=1, \
-		/obj/item/flashlight/ms13=1, \
-		/obj/item/ammo_box/ms13/a357box=1, \
-		/obj/item/radio/ms13=1)
+    suit = /obj/item/clothing/suit/ms13/vest/brown
+    suit_store =
+    uniform = /obj/item/clothing/under/ms13/wasteland/cowboy
+    head = /obj/item/clothing/head/helmet/ms13/cowboy/black
+    shoes = /obj/item/clothing/shoes/ms13/cowboy
+    belt = /obj/item/gun/ballistic/revolver/ms13/rev44
+    gloves = null
+    r_hand = null
+    r_pocket = null
+    l_pocket = /obj/item/ammo_box/ms13/m44box 
+    back = null
+    backpack_contents = list()
 
 /datum/outfit/job/ms13/town_deadwater/deadwater_deputy/pre_equip(mob/living/carbon/human/H)
 	..()

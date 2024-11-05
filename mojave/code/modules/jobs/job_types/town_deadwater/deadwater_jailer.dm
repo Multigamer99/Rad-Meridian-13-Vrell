@@ -17,7 +17,7 @@
 
 	id = 		 /obj/item/card/id/ms13/deadwater/deadwater_jailer
 	head =		 /obj/item/clothing/head/helmet/ms13/deputy
-	suit =       /obj/item/clothing/suit/armor/ms13/vest/vault
+	suit =       null
 	uniform =    /obj/item/clothing/under/ms13/wasteland/cowboy/tan
 	shoes =  	 /obj/item/clothing/shoes/ms13/military/vault
 	suit_store = /obj/item/gun/ballistic/shotgun/ms13/lever/cowboy

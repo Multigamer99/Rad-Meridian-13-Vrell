@@ -19,10 +19,12 @@
 
 	l_pocket =	 /obj/item/stack/ms13/currency/cap/hunnedtwentyfive
 	id =		 /obj/item/card/id/ms13/church/priest
-	uniform =	 /obj/item/clothing/under/ms13/wasteland/church
+	uniform =	 /obj/item/clothing/under/ms13/wasteland/whiteshirt
 	shoes =		 /obj/item/clothing/shoes/ms13/fancy
-	suit_store = /obj/item/gun/ballistic/revolver/ms13/rev357
-	suit =		 /obj/item/clothing/suit/hooded/ms13/priest
+	suit_store = /obj/item/gun/ballistic/automatic/pistol/ms13/pistol45/stallion
+	suit =		 /obj/item/clothing/suit/armor/ms13/vest
+	r_hand = /obj/item/radio/ms13/broadcast
+	head = /obj/item/clothing/head/helmet/ms13/prospector
 
 
 /datum/outfit/job/ms13/church/priest/pre_equip(mob/living/carbon/human/H)
