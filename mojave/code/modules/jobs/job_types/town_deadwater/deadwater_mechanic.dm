@@ -2,8 +2,8 @@
 	title = "Mechanic"
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "null"
-	description = "null"
+	supervisors = "Your craft"
+	description = "You work around the town, fixing things, making things, for a price of course."
 	forbid = ""
 	enforce = ""
 

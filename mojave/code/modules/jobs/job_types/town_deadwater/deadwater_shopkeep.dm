@@ -2,8 +2,8 @@
 	title = "Deadwater Shopkeeper"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = ""
-	description = ""
+	supervisors = "Caps and Profit"
+	description = "Make some Caps, trade with caravans coming through, or others."
 	forbid = ""
 	enforce = ""
 

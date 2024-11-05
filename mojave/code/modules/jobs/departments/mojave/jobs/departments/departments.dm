@@ -31,6 +31,7 @@
 // Fancy name for fancy boys
 /datum/job_department/var/department_full_name = null
 
+/*
 /datum/job_department/ncr
 	department_name = DEPARTMENT_NCR
 	department_bitflags = DEPARTMENT_BITFLAG_NCR
@@ -39,8 +40,8 @@
 	//display_order = 0
 	//label_class = "NCR"
 	//latejoin_color = "#ffddf0"
-
-
+*/
+/*
 /datum/job_department/legion
 	department_name = DEPARTMENT_LEGION
 	department_bitflags = DEPARTMENT_BITFLAG_LEGION
@@ -50,6 +51,7 @@
  	//display_order = 0
  	//label_class = "Legion"
  	//latejoin_color = "#ffddf0"
+*/
 
 /// Depreciated. Not even human.
 //datum/job_department/rangers
@@ -74,11 +76,12 @@
 	department_name = DEPARTMENT_RAIDERS
 	department_bitflags = DEPARTMENT_BITFLAG_RAIDERS
 	department_experience_type = EXP_TYPE_RAIDERS
-	department_full_name = "Gangs of Mammoth"
+	department_full_name = "Gangs of Yuma"
 	//display_order = 0
 	//label_class = "RAIDERS"
 	//latejoin_color = "#ffddf0"
 
+/*
 /datum/job_department/town
 	department_name = DEPARTMENT_TOWN
 	department_bitflags = DEPARTMENT_BITFLAG_TOWN
@@ -88,7 +91,8 @@
 	//display_order = 0
 	//label_class = "TOWN"
 	//latejoin_color = "#ffddf0"
-
+*/
+	
 /datum/job_department/wasteland
 	department_name = DEPARTMENT_WASTELAND
 	department_bitflags = DEPARTMENT_BITFLAG_WASTELAND
@@ -97,7 +101,7 @@
 	//display_order = 0
 	label_class = "WASTELAND"
 	//latejoin_color = "#ffddf0"
-
+/*
 /datum/job_department/town_drought
 	department_name = DEPARTMENT_DROUGHTTOWN
 	department_bitflags = DEPARTMENT_BITFLAG_DROUGHTTOWN
@@ -107,7 +111,9 @@
 	//display_order = 0
 	//label_class = "TOWN"
 	//latejoin_color = "#ffddf0"
+*/
 
+/*
 /datum/job_department/drylander
 	department_name = DEPARTMENT_DRYLANDER
 	department_bitflags = DEPARTMENT_BITFLAG_DRYLANDER
@@ -117,6 +123,7 @@
 	//display_order = 0
 	//label_class = "TOWN"
 	//latejoin_color = "#ffddf0"
+*/
 
 /datum/job_department/goldman
 	department_name = DEPARTMENT_GOLDMAN

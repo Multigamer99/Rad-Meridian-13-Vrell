@@ -5,7 +5,7 @@
 	supervisors = "The Priest"
 	description = "Followers of the Apocalypse, you have come here in order to help the people of the wastes, working with the church to do so."
 	forbid = ""
-	enforce = "The Slickbacks expect: Profitable operations, professional conduct and behavior, doing what is needed and best for the gang, but still within reason."
+	enforce = ""
 
 	outfit = /datum/outfit/job/ms13/church/follower
 
@@ -24,9 +24,13 @@
 	gloves =	 /obj/item/clothing/gloves/ms13/nitrile
 	shoes =		 /obj/item/clothing/shoes/ms13/fancy
 	belt =		/obj/item/storage/firstaid/ms13/regular
-	suit_store = /obj/item/gun/ballistic/automatic/pistol/ms13/m10mm/chinese
 	suit =		 /obj/item/clothing/suit/toggle/labcoat/ms13
-	back = 	     /obj/item/storage/ms13/satchel
+	back = /obj/item/storage/ms13/satchel
+	backpack_contents = list(/obj/item/stack/medical/ointment/ms13/half=1,\
+        /obj/item/stack/medical/suture/ms13/eight=1,\
+        /obj/item/stack/medical/gauze/ms13/half=1,\
+)
+
 
 /datum/outfit/job/ms13/church/follower/pre_equip(mob/living/carbon/human/H)
 	..()

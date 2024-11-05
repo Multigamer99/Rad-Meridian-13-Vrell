@@ -24,7 +24,11 @@
 	shoes = 	 /obj/item/clothing/shoes/ms13/fancy
 	gloves =	 /obj/item/clothing/gloves/ms13/nitrile
 	r_pocket =   /obj/item/stack/ms13/currency/prewar/hunnedeighty
-	back =       /obj/item/storage/ms13/satchel
+    back = /obj/item/storage/ms13/satchel
+    backpack_contents = list(        /obj/item/stack/medical/ointment/ms13/half=1,\
+        /obj/item/stack/medical/suture/ms13/eight=1,\
+        /obj/item/stack/medical/gauze/ms13/half=1,\
+)
 
 /datum/outfit/job/ms13/town/doctor/pre_equip(mob/living/carbon/human/H)
 	..()

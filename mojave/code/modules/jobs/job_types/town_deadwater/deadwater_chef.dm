@@ -9,7 +9,7 @@
 
 	outfit = /datum/outfit/job/ms13/town_deadwater/chef
 
-	display_order = JOB_DISPLAY_ORDER_MS13_CHEF
+	display_order = JOB_DISPLAY_ORDER_MS13_DEADWATERCHEF
 
 /datum/outfit/job/ms13/town_deadwater/chef
 	name = "_Chef"

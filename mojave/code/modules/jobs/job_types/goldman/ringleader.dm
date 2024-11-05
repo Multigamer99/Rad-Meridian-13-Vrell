@@ -3,7 +3,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "The Principles of the Goldman Posse."
-	description = "Assist and advise the Ringleader in matters. Organize and keep stock of the group's supplies. "
+	description = "You are the leader of the Goldman posse in the town of Dead Water, your aim to to protect your turf, and make caps. "
 
 	outfit = /datum/outfit/job/ms13/goldman/ringleader
 

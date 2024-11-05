@@ -4,9 +4,9 @@
 	spawn_positions = 3
 	supervisors = "The Priest, God, And John Moses Browning"
 	
-	description = "You are a drug cook for the Slickbacks. Not quite an actual, respected member of the gang but instead more of a lackey with the knowledge to make their chems so the gang can turn a profit, and some medical experience to tend their wounds."
+	description = "You are a missionary of New Canaan. Help the Priest to do gods will."
 	forbid = ""
-	enforce = "The Slickbacks expect: Profitable operations, professional conduct and behavior, doing what is needed and best for the gang, but still within reason."
+	enforce = ""
 
 	outfit = /datum/outfit/job/ms13/church/missionary
 

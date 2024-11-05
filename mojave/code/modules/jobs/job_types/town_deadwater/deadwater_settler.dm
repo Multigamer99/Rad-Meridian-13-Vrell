@@ -2,8 +2,8 @@
 	title = "Deadwater Settler"
 	total_positions = -1 //Infinite
 	spawn_positions = -1 //Infinite
-	supervisors = "null"
-	description = "null"
+	supervisors = "The Laws of the Land, and the Biggest Gun in town."
+	description = "You are a settler in Deadwater, you dont got much of a profession, but you go around looking for work."
 	forbid = ""
 	enforce = ""
 

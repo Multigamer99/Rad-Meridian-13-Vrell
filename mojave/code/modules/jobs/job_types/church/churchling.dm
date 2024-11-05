@@ -3,7 +3,7 @@
 	total_positions = 6
 	spawn_positions = 6
 	supervisors = "The Priest, God, And John Moses Browning"
-	description =  ""
+	description =  "You assist the church in menial tasks."
 	forbid = ""
 	enforce = ""
 

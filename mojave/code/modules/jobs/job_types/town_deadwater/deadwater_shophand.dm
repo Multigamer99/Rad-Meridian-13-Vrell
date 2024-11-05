@@ -2,8 +2,8 @@
 	title = "Deadwater Shop Hand"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "The Baron and his Enforcers."
-	description = "Tend to the Barony's bar and food services."
+	supervisors = "The Shopkeep"
+	description = "Assist the Shopkeep"
 	forbid = ""
 	enforce = ""
 

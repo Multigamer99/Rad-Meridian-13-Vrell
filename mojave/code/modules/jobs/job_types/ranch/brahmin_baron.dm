@@ -3,7 +3,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "The market"
-	description = ""
+	description = "You are the proud Owner of a Ranch. Protect it with your life."
 	forbid = ""
 	enforce = ""
 
@@ -20,7 +20,8 @@
 	uniform = /obj/item/clothing/under/ms13/wasteland/heeledsuit
 	shoes = 	 /obj/item/clothing/shoes/ms13/fancy
 	r_pocket =   /obj/item/stack/ms13/currency/cap/hunnedtwentyfive
-	l_pocket =	 /obj/item/stack/ms13/currency/prewar/hunned
+	belt =     /obj/item/gun/ballistic/revolver/ms13/rev44
+	l_pocket = /obj/item/ammo_box/ms13/m44box 
 
 
 /datum/outfit/job/ms13/ranch/brahminbaron/pre_equip(mob/living/carbon/human/H)
