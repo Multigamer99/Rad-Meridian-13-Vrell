@@ -15,19 +15,12 @@
 	name = "_Deadwater Deputy"
 	jobtype = /datum/job/ms13/town_deadwater/deadwater_deputy
 
-	id = 		 /obj/item/card/id/ms13/deadwater/deadwater_deputy
-    suit = /obj/item/clothing/suit/ms13/vest/brown
-    suit_store =
-    uniform = /obj/item/clothing/under/ms13/wasteland/cowboy
-    head = /obj/item/clothing/head/helmet/ms13/cowboy/black
-    shoes = /obj/item/clothing/shoes/ms13/cowboy
-    belt = /obj/item/gun/ballistic/revolver/ms13/rev44
-    gloves = null
-    r_hand = null
-    r_pocket = null
-    l_pocket = /obj/item/ammo_box/ms13/m44box 
-    back = null
-    backpack_contents = list()
+	id =	   /obj/item/card/id/ms13/deadwater/deadwater_deputy
+	uniform =  /obj/item/clothing/under/ms13/wasteland/cowboy
+	head =     /obj/item/clothing/head/helmet/ms13/cowboy/black
+	shoes =    /obj/item/clothing/shoes/ms13/cowboy
+	belt =     /obj/item/gun/ballistic/revolver/ms13/rev44
+	l_pocket = /obj/item/ammo_box/ms13/m44box 
 
 /datum/outfit/job/ms13/town_deadwater/deadwater_deputy/pre_equip(mob/living/carbon/human/H)
 	..()
