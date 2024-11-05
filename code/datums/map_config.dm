@@ -5,7 +5,7 @@
 
 /datum/map_config
 	// Metadata
-	var/config_filename = "_maps/Mammoth.json"
+	var/config_filename = "_maps/yuma2.json"
 	var/defaulted = TRUE  // set to FALSE by LoadConfig() succeeding
 	// Config from maps.txt
 	var/config_max_users = 0
@@ -14,9 +14,9 @@
 	var/votable = FALSE
 
 	// Config actually from the JSON - should default to Mammoth
-	var/map_name = "Mammoth"
-	var/map_path = "map_files/Mammoth"
-	var/map_file = "Mammoth.dmm"
+	var/map_name = "Yuma"
+	var/map_path = "map_files/Yuma2"
+	var/map_file = "Yuma2.dmm"
 
 	var/traits = null
 	var/space_ruin_levels = 7
