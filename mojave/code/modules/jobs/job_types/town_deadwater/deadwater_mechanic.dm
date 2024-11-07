@@ -1,5 +1,5 @@
 /datum/job/ms13/town_deadwater/mechanic
-	title = "Mechanic"
+	title = "Deadwater Mechanic"
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = "Your craft"
@@ -12,7 +12,7 @@
 	display_order = JOB_DISPLAY_ORDER_MS13_DEADWATERMECHANIC
 
 /datum/outfit/job/ms13/town_deadwater/mechanic
-	name = "_Mechanic"
+	name = "_Deadwater Mechanic"
 	jobtype = /datum/job/ms13/town_deadwater/mechanic
 
 	id = /obj/item/card/id/ms13/deadwater/deadwater_mechanic

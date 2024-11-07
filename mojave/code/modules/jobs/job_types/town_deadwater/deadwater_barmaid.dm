@@ -1,5 +1,5 @@
 /datum/job/ms13/town_deadwater/barmaid
-	title = "Barmaid"
+	title = "Deadwater Barmaid"
 	total_positions = 4
 	spawn_positions = 4
 	supervisors = "Barkeep"
@@ -12,7 +12,7 @@
 	display_order = JOB_DISPLAY_ORDER_MS13_DEADWATERBARMAID
 
 /datum/outfit/job/ms13/town_deadwater/barmaid
-	name = "_Barmaid"
+	name = "_Deadwater Barmaid"
 	jobtype = /datum/job/ms13/town_deadwater/barmaid
 
 	id =		 /obj/item/card/id/ms13/deadwater/deadwater_barmaid

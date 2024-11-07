@@ -1,5 +1,5 @@
 /datum/job/ms13/town_deadwater/shopguard
-	title = "Shop Guard"
+	title = "Deadwater Shop Guard"
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "The Shopkeeper"
@@ -12,7 +12,7 @@
 	display_order = JOB_DISPLAY_ORDER_MS13_DEADWATERSHOPGUARD
 
 /datum/outfit/job/ms13/town_deadwater/shopguard
-	name = "_Shop Guard"
+	name = "_Deadwater Shop Guard"
 	jobtype = /datum/job/ms13/town_deadwater/shopguard
 
 	id =		 /obj/item/card/id/ms13/deadwater/deadwater_shopguard

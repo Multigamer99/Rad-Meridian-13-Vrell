@@ -319,3 +319,6 @@
 
 /obj/effect/landmark/start/ms13/farmhand
     name = "Farm Hand"
+
+/obj/effect/landmark/start/ms13/brahminfamily
+	name = "Brahmin Family"

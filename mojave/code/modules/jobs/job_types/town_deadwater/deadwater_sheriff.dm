@@ -1,5 +1,5 @@
 /datum/job/ms13/town_deadwater/deadwater_sheriff
-	title = "Town Sheriff"
+	title = "Deadwater Sheriff"
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "The Law of the Land, and the big iron on your hip"
@@ -12,7 +12,7 @@
 	display_order = JOB_DISPLAY_ORDER_MS13_DEADWATERSHERIFF
 
 /datum/outfit/job/ms13/town_deadwater/deadwater_sheriff
-	name = "_Town Sheriff"
+	name = "_Deadwater Sheriff"
 	jobtype = /datum/job/ms13/town_deadwater/deadwater_sheriff
 
 	id = 		 /obj/item/card/id/ms13/sheriff

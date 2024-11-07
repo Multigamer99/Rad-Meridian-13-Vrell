@@ -12,7 +12,7 @@
 	display_order = JOB_DISPLAY_ORDER_MS13_DEADWATERSETTLER
 
 /datum/outfit/job/ms13/town_deadwater/deadwater_settler
-	name = "_Settler"
+	name = "_Deadwater Settler"
 	jobtype = /datum/job/ms13/town_deadwater/deadwater_settler
 
 	id =		 /obj/item/card/id/ms13/deadwater/deadwater_settler
