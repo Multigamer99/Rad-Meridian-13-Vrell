@@ -13,7 +13,7 @@
 	maxSeverityChange = 40
 	severitySteps = 8
 	immunity_type = TRAIT_DUSTSTORM_IMMUNE
-	probability = 1
+	probability = 0.7
 	target_trait = PARTICLEWEATHER_DUST
 
 /datum/particle_weather/dust_storm/weather_act(mob/living/carbon/L)
@@ -37,7 +37,7 @@
 	maxSeverityChange = 0
 	severitySteps = 50
 	immunity_type = TRAIT_RADSTORM_IMMUNE
-	probability = 1
+	probability = 0.3
 	target_trait = PARTICLEWEATHER_RADS
 
 //STOLEN
@@ -46,7 +46,7 @@
 		return
 
 	var/resist = L.getsubarmor()
-	if(prob(40))
+	if(prob(5))
 		if(ishuman(L))
 			var/mob/living/carbon/human/H = L
 			if(H.dna && !HAS_TRAIT(H, TRAIT_GENELESS))
@@ -74,7 +74,7 @@
 	maxSeverityChange = 5
 	severitySteps = 5
 	immunity_type = TRAIT_RAINSTORM_IMMUNE
-	probability = 1
+	probability = 0.2
 	target_trait = PARTICLEWEATHER_RAIN
 
 /datum/particle_weather/rain_gentle/weather_act(mob/living/L)
@@ -98,7 +98,7 @@
 	maxSeverityChange = 50
 	severitySteps = 50
 	immunity_type = TRAIT_RAINSTORM_IMMUNE
-	probability = 1
+	probability = 0.1
 	target_trait = PARTICLEWEATHER_RAIN
 
 /datum/particle_weather/rain_storm/weather_act(mob/living/L)

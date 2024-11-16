@@ -10,8 +10,9 @@
 	"space_empty_levels": 0,
 	"minetype": "none",
 	"particle_weather":{
-		"Weather_Dust" : false,
-		"Weather_Rads" : true
+		"Weather_Dust" : true,
+		"Weather_Rads" : true,
+		"Weather_Rain" : true
 	},
 	"traits": [
 		{
