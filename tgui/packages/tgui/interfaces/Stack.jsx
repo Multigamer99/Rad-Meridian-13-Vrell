@@ -1,16 +1,8 @@
-import { sortBy } from 'common/collections';
 import { createSearch } from 'common/string';
 
 import { useBackend, useLocalState } from '../backend';
-import {
-  Box,
-  Button,
-  Collapsible,
-  Input,
-  NoticeBox,
-  Section,
-  Table,
-} from '../components';
+import { Box, Button, Input, NoticeBox, Section, Table } from '../components';
+import { Collapsible } from '../components';
 import { Window } from '../layouts';
 
 export const Stack = (props) => {
@@ -67,6 +59,27 @@ const RecipeList = (props) => {
 
   const { recipes } = props;
 
+  if (recipes.keys <= 0) return null;
+
+  let out = [];
+
+  for (let key in recipes) {
+    if (recipes[key].ref === undefined) {
+      out.push(
+        <Collapsible ml={1} color="label" title={key}>
+          <Box ml={1}>
+            <RecipeList recipes={recipes[key]} />
+          </Box>
+        </Collapsible>,
+      );
+    } else {
+      out.push(<Recipe title={key} recipe={recipes[key]} />);
+    }
+  }
+
+  return out;
+
+  /*
   const sortedKeys = sortBy((key) => key.toLowerCase())(Object.keys(recipes));
 
   return sortedKeys.map((title) => {
@@ -83,6 +96,7 @@ const RecipeList = (props) => {
       return <Recipe title={title} recipe={recipe} />;
     }
   });
+  */
 };
 
 const buildMultiplier = (recipe, amount) => {
