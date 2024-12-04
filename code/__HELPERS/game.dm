@@ -119,13 +119,19 @@
 
 ///Like remove_image_from_client, but will remove the image from a list of clients
 /proc/remove_images_from_clients(image/image_to_remove, list/show_to)
-	for(var/client/remove_from in show_to)
-		remove_from.images -= image_to_remove
+	try
+		for(var/client/remove_from in show_to)
+			remove_from.images -= image_to_remove
+	catch(var/err)
+		stack_trace("Invalid remove images | image: [image_to_remove] | list: [show_to] | error: [err]");
+		return;
+	return;
 
 ///Add an image to a list of clients and calls a proc to remove it after a duration
 /proc/flick_overlay(image/image_to_show, list/show_to, duration)
-	for(var/client/add_to in show_to)
-		add_to.images += image_to_show
+	//Vrell - lets add a rudimentary safety test, just in case.
+	if(image_to_show == null || "[image_to_show]" == "" || show_to == null || LAZYLEN(show_to) <= 0 || duration <= 0 || duration == null) return;
+
 	addtimer(CALLBACK(GLOBAL_PROC, PROC_REF(remove_images_from_clients), image_to_show, show_to), duration, TIMER_CLIENT_TIME)
 
 ///wrapper for flick_overlay(), flicks to everyone who can see the target atom

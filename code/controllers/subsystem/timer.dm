@@ -125,8 +125,12 @@ SUBSYSTEM_DEF(timer)
 				head_offset: [head_offset], practical_offset: [practical_offset], REALTIMEOFDAY: [REALTIMEOFDAY]")
 
 		ctime_timer.spent = REALTIMEOFDAY
-		callBack.InvokeAsync()
-
+		try
+			callBack.InvokeAsync()
+		catch(var/e)
+			stack_trace("Invalid callback: [get_timer_debug_string(ctime_timer)] world.time: [world.time], \
+				callback: [callBack], args: [stringify_list(callBack.arguments)], error: ([e])")
+		
 		if(ctime_timer.flags & TIMER_LOOP)
 			if (QDELETED(ctime_timer)) // Don't re-insert timers deleted inside their callbacks.
 				continue
@@ -172,7 +176,11 @@ SUBSYSTEM_DEF(timer)
 			// Invoke callback if possible
 			if (!timer.spent)
 				timer.spent = world.time
-				callBack.InvokeAsync()
+				try
+					callBack.InvokeAsync()
+				catch(var/e)
+					stack_trace("Invalid callback: [get_timer_debug_string(timer)] world.time: [world.time], \
+						callback: [callBack], args: [stringify_list(callBack.arguments)], error: ([e])")
 				last_invoke_tick = world.time
 
 			if (timer.flags & TIMER_LOOP) // Prepare looping timers to re-enter the queue
