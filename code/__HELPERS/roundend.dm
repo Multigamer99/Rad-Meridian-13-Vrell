@@ -37,6 +37,7 @@
 					escape_status = "escapees"
 					if(shuttle_areas[get_area(M)])
 						num_shuttle_escapees++
+				//VRELL - START HERE SSticker.bluestar.trigger_survival(M.mind.key)
 			if(isliving(M))
 				var/mob/living/L = M
 				mob_data["location"] = get_area(L)

@@ -1155,6 +1155,26 @@
 		if(!check_rights(R_SPAWN))
 			return
 		return DuplicateObject(marked_datum, perfectcopy=1, newloc=get_turf(usr))
+	
+	else if(href_list["refresh_bluestar"])
+		if(!check_rights(R_ADMIN))
+			return
+		return SSticker.bluestar.refresh_from_database()
+	
+	else if(href_list["view_bluestar"])
+		if(!check_rights(R_ADMIN))
+			return
+		return player_bluestar(href_list["view_bluestar"])
+	
+	else if(href_list["edit_bluestar"])
+		if(!check_rights(R_DBRANKS) || !check_rights(R_ADMIN) || href_list["edit_bluestar"] == usr.ckey)
+			return
+		
+		var/reason = adminscrub(stripped_input(usr, "Provide a note for transaction.", "Transaction: [href_list["edit_bluestar"]]", "No note."))
+		var/amount = text2num(input(usr, "How many blue stars to give? Negative values will take blue stars instead.", "Transaction: [href_list["edit_bluestar"]]", "0"))
+		SSticker.bluestar.add_transaction(href_list["edit_bluestar"], new bluestar_transaction("admin", href_list["edit_bluestar"], usr.ckey, GLOB.round_id, SQLtime(), amount, 0, reason))
+
+		return player_bluestar(href_list["edit_bluestar"])
 
 	else if(href_list["object_list"]) //this is the laggiest thing ever
 		if(!check_rights(R_SPAWN))

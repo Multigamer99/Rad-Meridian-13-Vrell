@@ -693,6 +693,28 @@ CREATE TABLE `telemetry_connections` (
     UNIQUE INDEX `unique_constraints` (`ckey` , `telemetry_ckey` , `address` , `computer_id`)
 );
 
+--
+-- Table structure for table `bluestar`
+--
+
+DROP TABLE IF EXISTS `bluestar`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `bluestar` (
+  `type` VARCHAR(32) NOT NULL,
+  `target` varchar(32) NOT NULL,
+  `gifter` varchar(32) NOT NULL DEFAULT "SERVER",
+  `round_id` int(11) unsigned NULL,
+  `timestamp` datetime NOT NULL,
+  `target_reward` INT(32) UNSIGHNED NOT NULL DEFAULT 0,
+  `gifter_reward` INT(32) UNSIGHNED NOT NULL DEFAULT 0,
+  `note` text NOT NULL DEFAULT "No note",
+  PRIMARY KEY (`target`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+
+
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
 /*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;

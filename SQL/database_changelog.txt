@@ -4,9 +4,9 @@ Make sure to also update `DB_MAJOR_VERSION` and `DB_MINOR_VERSION`, which can be
 
 The latest database version is 5.21; The query to update the schema revision table is:
 
-INSERT INTO `schema_revision` (`major`, `minor`) VALUES (5, 22);
+INSERT INTO `schema_revision` (`major`, `minor`) VALUES (5, 23);
 or
-INSERT INTO `SS13_schema_revision` (`major`, `minor`) VALUES (5, 22);
+INSERT INTO `SS13_schema_revision` (`major`, `minor`) VALUES (5, 23);
 
 In any query remember to add a prefix to the table names if you use one.
 

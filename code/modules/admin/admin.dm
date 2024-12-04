@@ -44,6 +44,58 @@
 	usr << browse(dat, "window=admin2;size=240x280")
 	return
 
+/datum/admins/proc/bluestar()
+	if(!check_rights(R_ADMIN))
+		return
+
+	var/dat = "<center><B>Blue Star Panel</B></center><hr>"
+	dat += "<div width=\"50%\">"
+	if(SSticker.bluestar.dbfail) "<center><b>AN ERROR OCCURED WHEN LOADING DATABASE DATA. <A href='?src=[REF(src)];[HrefToken()];refresh_bluestar=1'>RETRY?</A></b></center><br>"
+	
+	dat += "<div /><div width=\"50%\">"
+	dat += "<center><B>Players</B></center><br />"
+	for(var/player in SSticker.bluestar.ckeys)
+		dat += "<A href='?src=[REF(src)];[HrefToken()];view_bluestar=[player]'>[player]: [SSticker.bluestar.entries[player].bluestar_count]</A><br />"
+	dat += "<div />"
+
+	usr << browse(dat, "window=bluestar;size=900x650")
+	return
+
+/datum/admins/proc/player_bluestar(var/target_ckey)
+	if(!check_rights(R_ADMIN))
+		return
+
+	var/dat = "<center><B>Blue Star Panel: [target_ckey]</B></center><hr>"
+	if(check_rights(R_DBRANKS) || target_ckey != usr.ckey)
+		dat += "<A href='?src=[REF(src)];[HrefToken()];edit_bluestar=[target_ckey]'>New Transaction</A></b></center><br>"
+	dat += "<B>Total Blue Stars: [SSticker.bluestar.entries[target_ckey].bluestar_count]</B><br />"
+	dat += "<center><B>Transaction History</B></center><br />"
+	dat +="<div width=\"100%\">"
+	for(var/datum/bluestar_transaction/transaction in SSticker.bluestar.entries[target_ckey].bluestar_transactions)
+		dat += "[transaction.timestamp]|[transaction.round_id]| "
+		switch(transaction.type)
+			if("survival")
+				dat += "Survived: +[transaction.target_reward] Blue Stars<br />"
+			if("admin")
+				if(transaction.target_reward > 0) dat += "Reward from [transaction.gifter]: +[transaction.target_reward], [transaction.note]<br />"
+				else if(transaction.target_reward < 0) dat += "Penalty from [transaction.gifter]: -[transaction.target_reward], [transaction.note]<br />"
+				else dat += "Note from [transaction.gifter]: [transaction.note]<br />"
+			if("commendation")
+				if(target_ckey == transaction.target)
+					if(transaction.target_reward > 0) dat += "Commendation from [transaction.gifter]: +[transaction.target_reward]<br />"
+					else dat += "Failed Commendation from [transaction.gifter]: [transaction.note]<br />"
+				else
+					if(transaction.gifter_reward == 0) dat += "Commendation to [transaction.target]<br />"
+					else dat += "Failed Commendation to [transaction.target]: [transaction.gifter_reward], [transaction.note]<br />"
+			if("purchase")
+				dat += "Purchased [transaction.note]: [transaction.target_reward]<br />"
+			else
+				dat += "[transaction.type]: [transaction.target_reward], [transaction.note]<br />"
+	dat += "<div />"
+
+	usr << browse(dat, "window=bluestar[target_ckey];size=900x650")
+	return
+
 ////////////////////////////////////////////////////////////////////////////////////////////////ADMIN HELPER PROCS
 
 /datum/admins/proc/spawn_atom(object as text)

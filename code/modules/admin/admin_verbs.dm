@@ -431,6 +431,13 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 		holder.Game()
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Game Panel") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
+/client/proc/bluestar_panel()
+	set name = "Bluestar Panel"
+	set category = "Admin"
+	if(holder)
+		holder.Game()
+	SSblackbox.record_feedback("tally", "admin_verb", 1, "Bluestar Panel") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
+
 /client/proc/poll_panel()
 	set name = "Server Poll Management"
 	set category = "Admin"
