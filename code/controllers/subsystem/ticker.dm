@@ -59,9 +59,6 @@ SUBSYSTEM_DEF(ticker)
 	/// People who have been commended and will receive a heart
 	var/list/hearts
 
-	//Vrell - the proper commendation system
-	var/bluestar_system/bluestar
-
 	/// Why an emergency shuttle was called
 	var/emergency_reason
 
@@ -143,8 +140,6 @@ SUBSYSTEM_DEF(ticker)
 		gametime_offset = rand(0, 23) HOURS
 	else if(CONFIG_GET(flag/shift_time_realtime))
 		gametime_offset = world.timeofday
-	
-	bluestar = new()
 	return ..()
 
 /datum/controller/subsystem/ticker/fire()
@@ -212,6 +207,12 @@ SUBSYSTEM_DEF(ticker)
 				declare_completion(force_ending)
 				check_maprotate()
 				Master.SetRunLevel(RUNLEVEL_POSTGAME)
+			
+			++bluestar_ticks
+			if(bluestar_ticks > CONFIG_GET(number/bstar_ticker_frequency))
+				bluestar_ticks = 0
+				bluestar_system.tick()
+
 
 
 /datum/controller/subsystem/ticker/proc/setup()

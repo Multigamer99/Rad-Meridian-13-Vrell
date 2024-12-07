@@ -253,3 +253,6 @@
 	var/active_typing_indicator
 	///the icon currently used for the thinking indicator's bubble
 	var/active_thinking_indicator
+
+	//Vrell - the timestamp that the mob spawned at. Not real time, which is of note. Server lag does affect this but it should be fine and there are vars already in use that align with it.
+	var/spawn_time = world.time

@@ -694,11 +694,11 @@ CREATE TABLE `SS13_telemetry_connections` (
 );
 
 --
--- Table structure for table `bluestarlogs`
+-- Table structure for table `bluestar`
 --
 
-DROP TABLE IF EXISTS `SS13_bluestarlogs`;
-CREATE TABLE `SS13_bluestardeltas` (
+DROP TABLE IF EXISTS `SS13_bluestar`;
+CREATE TABLE `SS13_bluestar` (
   `type` VARCHAR(32) NOT NULL,
   `target` varchar(32) NOT NULL,
   `gifter` varchar(32) NOT NULL DEFAULT "SERVER",

@@ -1,60 +1,69 @@
 ## How long until new player penalties are lifted, in rounds survived.
 ## EX: 20 means 20 rounds
-BSTARNEWTIME 20
+BSTAR_NEW_TIME 20
+
+## How many free bluestars a player gets if they have no transactions in the database.
+## EX: 3 means 3 bluestars
+BSTAR_NEW_START 3
+
+## How often the ticker runs, in deciseconds per tick. This is inverse, so higher numbers mean less often.
+## Probably won't need to touch this, but if you want to edge out a bit more performance, you can increase this value. I would not advise going over 300 deciseconds.
+## EX: 20 means 20 deciseconds per tick, so the system triggers once ever two seconds
+BSTAR_TICKER_FREQUENCY 20
 
 ## SURVIVAL BLUESTARS
 
 ## The number of bluestars granted per round for survival
-BSTARSURVIVALREWARD 1
+BSTAR_SURVIVAL_REWARD 1
 
 ## The ratio tolerance of active time versus inactive time needed to gain survival bluestars
 ## EX: 0.4 means the player needs to be active for 40% of the round.
-BSTARSURVIVALRATIO 0.5
+BSTAR_SURVIVAL_RATIO 0.5
 
 ## Whether activity counts the whole round or only the amount of time the user has been in the round.
 ## EX: TRUE means it only counts the time the player has been playing this round.
-BSTARSURVIVALRELATIVE TRUE
+BSTAR_SURVIVAL_RELATIVE TRUE
 
 ## The minimum amount of time the player must be active in a round to get a bluestar, in seconds.
 ## EX: 900 is 15 minutes.
-BSTARSURVIVALMINIMUMTIME 900
+BSTAR_SURVIVAL_MINIMUM_TIME 900
 
 ## Whether you lose your survival bluestar if you commend with a penalty, or if the commend just doesn't go through.
 ## EX: TRUE means it blocks the commendation from rewarding the person you commended. FALSE means it uses your bluestar to commend them.
-BSTARSURVIVALBLOCK TRUE
+BSTAR_SURVIVAL_BLOCK TRUE
 
 ## ANTI-REPEAT COMMENDATION PENALTY
 
 ## Whether or not the repeat commendation recovers passively or only for each round participated in.
 ## EX: TRUE means it recovers even when not playing, allowing them to commend the same person again after a gap in not playing.
-BSTARREPEATPASSIVECOOLDOWN TRUE
+BSTAR_REPEAT_PASSIVE_COOLDOWN TRUE
 
 ## Whether or not the repeat commendation penalty is dependant on rounds played or time in seconds.
 ## EX: TRUE means it recovers based on rounds. FALSE means it recovers based on seconds.
-BSTARREPEATROUNDS TRUE
+BSTAR_REPEAT_ROUNDS TRUE
 
 ## How much of a time/round cooldown is expected between commendations without penalty. This is added to previous cooldowns on every commendation of that same person.
 ## EX: 4 can be 4 rounds. 14400 can be 4 hours. Dependant on BSTARREPEATROUNDS
-BSTARREPEATCOOLDOWN 4
+BSTAR_REPEAT_COOLDOWN 4
 
 ## How much leeway is given for fresh commendations, IE how far into the negative the cooldown can go, shortening future cooldowns.
 ## EX: 2 can be 2 rounds, effectively reducing the cooldown of commendations by 2 rounds if you have not commended them in a long time. Dependant on BSTARREPEATROUNDS, as it is in seconds if that is false.
-BSTARREPEATFRESHNESS 2
+BSTAR_REPEAT_FRESHNESS 2
 
 ## How much the cooldown is increased for new players.
 ## EX: 2 means 2 times the penalty.
-BSTARREPEATNEWPENALTY 2
+BSTAR_REPEAT_NEW_PENALTY 2
 
 ## ANTI-RING COMMENDATION PENALTY
 
 ## The largest a chain of commendations can be without instating the penalty.
 ## EX: 3 means 3 players can commend each other in a chain without penalty, but 4 cannot.
-BSTARRINGMAX 3
+BSTAR_RING_MAX 3
 
 ## If someone in the ring of people that you are NOT commending would cause a penalty if you commended them, they count as this many extra people.
 ## EX: 1 means that in a ring of 3 players, if the player you didn't commend would have caused a penalty were you to commend them, a penalty is applied.
-BSTARRINGCOMPOUND 1
+BSTAR_RING_COMPOUND 1
 
 ## How much the maximum chain size is reduced for new players. Only applies if everyone in the chain is a new player.
 ## EX: 1 means that there can be 1 less player in the chain without triggering this system.
-BSTARRINGNEWPENALTY 1
+BSTAR_RING_NEW_PENALTY 1

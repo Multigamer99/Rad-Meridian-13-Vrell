@@ -154,6 +154,7 @@
 #define INIT_ORDER_OVERLAY -6
 #define INIT_ORDER_XKEYSCORE -10
 #define INIT_ORDER_STICKY_BAN -10
+#define INIT_ORDER_BLUESTAR -11 //Vrell - since this happens after sticky bans, database stuff should be good by now.
 #define INIT_ORDER_LIGHTING -20
 #define INIT_ORDER_OUTDOOR_EFFECTS	-21 //MOJAVE MODULE OUTDOOR_EFFECTS
 #define INIT_ORDER_SHUTTLE -22 //MOJAVE MODULE OUTDOOR_EFFECTS

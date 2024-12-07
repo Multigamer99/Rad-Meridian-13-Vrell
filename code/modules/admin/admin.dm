@@ -50,12 +50,12 @@
 
 	var/dat = "<center><B>Blue Star Panel</B></center><hr>"
 	dat += "<div width=\"50%\">"
-	if(SSticker.bluestar.dbfail) "<center><b>AN ERROR OCCURED WHEN LOADING DATABASE DATA. <A href='?src=[REF(src)];[HrefToken()];refresh_bluestar=1'>RETRY?</A></b></center><br>"
+	if(SSbluestar.dbfail) "<center><b>AN ERROR OCCURED WHEN LOADING DATABASE DATA. <A href='?src=[REF(src)];[HrefToken()];refresh_bluestar=1'>RETRY?</A></b></center><br>"
 	
 	dat += "<div /><div width=\"50%\">"
 	dat += "<center><B>Players</B></center><br />"
-	for(var/player in SSticker.bluestar.ckeys)
-		dat += "<A href='?src=[REF(src)];[HrefToken()];view_bluestar=[player]'>[player]: [SSticker.bluestar.entries[player].bluestar_count]</A><br />"
+	for(var/player in SSbluestar.ckeys)
+		dat += "<A href='?src=[REF(src)];[HrefToken()];view_bluestar=[player]'>[player]: [SSbluestar.entries[player].bluestar_count]</A><br />"
 	dat += "<div />"
 
 	usr << browse(dat, "window=bluestar;size=900x650")
@@ -68,12 +68,14 @@
 	var/dat = "<center><B>Blue Star Panel: [target_ckey]</B></center><hr>"
 	if(check_rights(R_DBRANKS) || target_ckey != usr.ckey)
 		dat += "<A href='?src=[REF(src)];[HrefToken()];edit_bluestar=[target_ckey]'>New Transaction</A></b></center><br>"
-	dat += "<B>Total Blue Stars: [SSticker.bluestar.entries[target_ckey].bluestar_count]</B><br />"
+	dat += "<B>Total Blue Stars: [SSbluestar.entries[target_ckey].bluestar_count]</B><br />"
 	dat += "<center><B>Transaction History</B></center><br />"
 	dat +="<div width=\"100%\">"
-	for(var/datum/bluestar_transaction/transaction in SSticker.bluestar.entries[target_ckey].bluestar_transactions)
+	for(var/datum/bluestar_transaction/transaction in SSbluestar.entries[target_ckey].bluestar_transactions)
 		dat += "[transaction.timestamp]|[transaction.round_id]| "
 		switch(transaction.type)
+			if("starting")
+				dat += "Starting Bonus: +[transaction.target_reward] Blue Stars<br />"
 			if("survival")
 				dat += "Survived: +[transaction.target_reward] Blue Stars<br />"
 			if("admin")
