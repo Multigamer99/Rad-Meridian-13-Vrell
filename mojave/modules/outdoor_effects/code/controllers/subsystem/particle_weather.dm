@@ -20,10 +20,21 @@ SUBSYSTEM_DEF(ParticleWeather)
 			for(var/obj/act_on as anything in GLOB.weather_act_upon_list)
 				runningWeather.weather_obj_act(act_on)
 	else
-		// start random weather
-		var/datum/particle_weather/our_event = pick_weight(elligble_weather) //possible_weather
-		if(our_event)
-			run_weather(our_event)
+		if(prob(50))
+		{
+			if(runningWeather)
+				runningWeather.end()
+			
+			runningWeather = new /datum/particle_weather/dust_storm()
+			
+			var/randTime = rand(6000, 12000)
+			addtimer(CALLBACK(src, /datum/controller/subsystem/ParticleWeather/proc/clear_weather), randTime, TIMER_UNIQUE|TIMER_STOPPABLE)
+		}
+		else
+			// start random weather
+			var/datum/particle_weather/our_event = pick_weight(elligble_weather) //possible_weather
+			if(our_event)
+				run_weather(our_event)
 
 
 //This has been mangled - currently only supports 1 weather effect serverwide so I can finish this
@@ -38,6 +49,9 @@ SUBSYSTEM_DEF(ParticleWeather)
 			LAZYINITLIST(elligble_weather)
 			elligble_weather[W] = probability
 	return ..()
+
+/datum/controller/subsystem/ParticleWeather/proc/clear_weather()
+	runningWeather = null
 
 /datum/controller/subsystem/ParticleWeather/proc/run_weather(datum/particle_weather/weather_datum_type, force = 0)
 	if(runningWeather)
@@ -59,7 +73,7 @@ SUBSYSTEM_DEF(ParticleWeather)
 	if(force)
 		runningWeather.start()
 	else
-		var/randTime = rand(0, 6000) + initial(runningWeather.weather_duration_upper)
+		var/randTime = rand(6000, 12000) + initial(runningWeather.weather_duration_upper)
 		addtimer(CALLBACK(runningWeather, /datum/particle_weather/proc/start), randTime, TIMER_UNIQUE|TIMER_STOPPABLE) //Around 0-10 minutes between weathers
 
 
