@@ -165,56 +165,38 @@ window "infowindow"
 		left = "statwindow"
 		right = "outputwindow"
 		is-vert = false
-	elem "changelog"
-		type = BUTTON
-		pos = 16,5
-		size = 104x20
-		anchor1 = 3,0
-		anchor2 = 19,0
-		saved-params = "is-checked"
-		text = "Changelog"
-		command = "changelog"
 	elem "rules"
 		type = BUTTON
-		pos = 120,5
-		size = 100x20
-		anchor1 = 19,0
-		anchor2 = 34,0
+		pos = 20,5
+		size = 150x20
+		anchor1 = 3,0
+		anchor2 = 24,0
 		saved-params = "is-checked"
 		text = "Rules"
 		command = "rules"
-	elem "wiki"
+	elem "discord"
 		type = BUTTON
-		pos = 220,5
-		size = 100x20
-		anchor1 = 34,0
-		anchor2 = 50,0
+		pos = 170,5
+		size = 150x20
+		anchor1 = 24,0
+		anchor2 = 48,0
 		saved-params = "is-checked"
-		text = "Wiki"
-		command = "wiki"
-	elem "forum"
-		type = BUTTON
-		pos = 320,5
-		size = 100x20
-		anchor1 = 50,0
-		anchor2 = 66,0
-		saved-params = "is-checked"
-		text = "Forum"
-		command = "forum"
+		text = "Discord"
+		command = "discord"
 	elem "github"
 		type = BUTTON
-		pos = 420,5
-		size = 100x20
-		anchor1 = 66,0
-		anchor2 = 81,0
+		pos = 320,5
+		size = 150x20
+		anchor1 = 48,0
+		anchor2 = 72,0
 		saved-params = "is-checked"
 		text = "Github"
 		command = "github"
 	elem "report-issue"
 		type = BUTTON
-		pos = 520,5
-		size = 100x20
-		anchor1 = 81,0
+		pos = 470,5
+		size = 150x20
+		anchor1 = 72,0
 		anchor2 = 97,0
 		saved-params = "is-checked"
 		text = "Report Issue"

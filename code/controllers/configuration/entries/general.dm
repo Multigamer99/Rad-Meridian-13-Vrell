@@ -286,7 +286,7 @@
 /datum/config_entry/string/wikiurl
 	default = "http://www.tgstation13.org/wiki"
 
-/datum/config_entry/string/forumurl
+/datum/config_entry/string/discordurl
 	default = "http://tgstation13.org/phpBB/index.php"
 
 /datum/config_entry/string/rulesurl
