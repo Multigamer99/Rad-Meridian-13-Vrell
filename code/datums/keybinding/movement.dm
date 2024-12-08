@@ -45,7 +45,7 @@
 	return TRUE
 
 /datum/keybinding/movement/zlevel_downwards
-	hotkey_keys = list("Southeast") // PGDOWN
+	hotkey_keys = list("Unbound") // PGDOWN
 	name = "Downwards"
 	full_name = "Move Downwards"
 	description = "Moves your character down a z-level if possible"

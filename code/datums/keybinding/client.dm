@@ -19,7 +19,7 @@
 
 
 /datum/keybinding/client/screenshot
-	hotkey_keys = list("F2")
+	hotkey_keys = list("Unbound")
 	name = "screenshot"
 	full_name = "Screenshot"
 	description = "Take a screenshot."

@@ -6,7 +6,7 @@
 	return isliving(user.mob)
 
 /datum/keybinding/living/resist
-	hotkey_keys = list("B")
+	hotkey_keys = list("F")
 	name = "resist"
 	full_name = "Resist"
 	description = "Break free of your current state. Handcuffed? on fire? Resist!"
@@ -21,7 +21,7 @@
 	return TRUE
 
 /datum/keybinding/living/look_up
-	hotkey_keys = list("L")
+	hotkey_keys = list("ShiftF")
 	name = "look up"
 	full_name = "Look Up"
 	description = "Look up at the next z-level.  Only works if directly below open space."
@@ -41,7 +41,7 @@
 	return TRUE
 
 /datum/keybinding/living/look_down
-	hotkey_keys = list(";")
+	hotkey_keys = list("ShiftV")
 	name = "look down"
 	full_name = "Look Down"
 	description = "Look down at the previous z-level.  Only works if directly above open space."
@@ -61,7 +61,7 @@
 	return TRUE
 
 /datum/keybinding/living/rest
-	hotkey_keys = list("U")
+	hotkey_keys = list("H")
 	name = "rest"
 	full_name = "Rest"
 	description = "Lay down, or get up."
@@ -76,7 +76,7 @@
 	return TRUE
 
 /datum/keybinding/living/toggle_combat_mode
-	hotkey_keys = list("F")
+	hotkey_keys = list("C")
 	name = "toggle_combat_mode"
 	full_name = "Toggle Combat Mode"
 	description = "Toggles combat mode. Like Help/Harm but cooler."
@@ -91,7 +91,7 @@
 	user_mob.set_combat_mode(!user_mob.combat_mode, FALSE)
 
 /datum/keybinding/living/enable_combat_mode
-	hotkey_keys = list("4")
+	hotkey_keys = list("Unbound")
 	name = "enable_combat_mode"
 	full_name = "Enable Combat Mode"
 	description = "Enable combat mode."
@@ -105,7 +105,7 @@
 	user_mob.set_combat_mode(TRUE, silent = FALSE)
 
 /datum/keybinding/living/disable_combat_mode
-	hotkey_keys = list("1")
+	hotkey_keys = list("Unbound")
 	name = "disable_combat_mode"
 	full_name = "Disable Combat Mode"
 	description = "Disable combat mode."
