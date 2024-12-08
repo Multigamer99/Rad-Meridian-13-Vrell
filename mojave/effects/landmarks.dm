@@ -1,5 +1,5 @@
 /obj/effect/landmark/start/ms13
-	name = "Mojave Sun"
+	name = "Rad Meridian"
 	icon_state = "Assistant"
 	jobspawn_override = TRUE
 	delete_after_roundstart = FALSE
