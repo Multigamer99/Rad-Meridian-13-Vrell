@@ -14,17 +14,17 @@
 		to_chat(src, span_danger("The wiki URL is not set in the server configuration."))
 	return
 
-/client/verb/forum()
-	set name = "forum"
-	set desc = "Visit the forum."
+/client/verb/discord()
+	set name = "discord"
+	set desc = "Visit the discord."
 	set hidden = TRUE
-	var/forumurl = CONFIG_GET(string/forumurl)
-	if(forumurl)
-		if(tgui_alert(src, "This will open the forum in your browser. Are you sure?",, list("Yes","No"))!="Yes")
+	var/discordurl = CONFIG_GET(string/discordurl)
+	if(discordurl)
+		if(tgui_alert(src, "This will open the discord in your browser. Are you sure?",, list("Yes","No"))!="Yes")
 			return
-		src << link(forumurl)
+		src << link(discordurl)
 	else
-		to_chat(src, span_danger("The forum URL is not set in the server configuration."))
+		to_chat(src, span_danger("The discord URL is not set in the server configuration."))
 	return
 
 /client/verb/rules()

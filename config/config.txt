@@ -254,17 +254,17 @@ CHECK_RANDOMIZER
 ## Don't set this to the same server, BYOND will automatically restart players to the server when it has restarted.
 # SERVER ss13.example.com:2506
 
-## forum address
-FORUMURL https://discord.gg/ms13
+## discord address
+DISCORDURL https://discord.gg/2P6RpVZS7N
 
 ## Wiki address
-# WIKIURL http://www.tgstation13.org/wiki
+# WIKIURL https://discord.gg/2P6RpVZS7N
 
 ## Rules address
-RULESURL https://docs.google.com/document/d/1oQRTz-WbaOEoGLtMmMyaUQ6zXZLTkhfwsc8Pohgoa3w/edit?usp=sharing
+RULESURL https://discord.com/channels/860051563393318912/1162949864578105344
 
 ## Github address
-GITHUBURL https://github.com/Mojave-Sun/mojave-sun-13
+GITHUBURL https://github.com/Rad-Meridian/Rad-Meridian-13
 
 ## Discord bot command prefix, if the discord bot is used
 # DISCORDBOTCOMMANDPREFIX ?
