@@ -1,7 +1,7 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aan" = (
 /obj/structure/table/ms13/low_wall/brick/alt,
-/turf/open/space/basic,
+/turf/open/floor/plating/ms13/ground/desert,
 /area/ms13/town)
 "aav" = (
 /obj/structure/chair/ms13/metal{
@@ -704,7 +704,7 @@
 "aLU" = (
 /obj/structure/table/ms13/low_wall/brick/gray,
 /obj/effect/decal/cleanable/blood/tracks,
-/turf/open/space/basic,
+/turf/open/floor/plating/ms13/ground/desert,
 /area/ms13/town)
 "aMp" = (
 /obj/structure/railing/ms13/wood,
@@ -1202,10 +1202,10 @@
 /turf/open/floor/ms13/tile/large/cafeteria,
 /area/ms13/town)
 "bjm" = (
-/obj/structure/table/ms13/low_wall/brick/gray,
 /obj/structure/window/fulltile/ms13/glass,
 /obj/effect/turf_decal/weather/dirt,
 /obj/effect/spawner/random/structure/barricade,
+/obj/structure/table/ms13/low_wall/brick/gray,
 /turf/open/floor/ms13/tile/large/white,
 /area/ms13/town)
 "bjD" = (
@@ -8469,7 +8469,7 @@
 	dir = 1
 	},
 /obj/structure/ms13/bars,
-/turf/open/space/basic,
+/turf/open/floor/plating/ms13/ground/desert,
 /area/ms13/town)
 "jSy" = (
 /turf/closed/wall/ms13/craftable/scrap,
@@ -8572,11 +8572,6 @@
 /obj/structure/chair/ms13/wood,
 /turf/open/floor/wood/ms13/wide,
 /area/ms13/underground/mountain)
-"kbr" = (
-/obj/structure/table/ms13/low_wall/brick/gray,
-/obj/structure/window/fulltile/ms13/glass,
-/turf/open/space/basic,
-/area/ms13/town)
 "kbt" = (
 /obj/structure/table/ms13/no_smooth/counter/metal{
 	dir = 8;
@@ -10297,7 +10292,7 @@
 /obj/structure/ms13/barricade{
 	dir = 4
 	},
-/turf/open/space/basic,
+/turf/open/floor/plating/ms13/ground/desert,
 /area/ms13/town)
 "lYY" = (
 /obj/structure/table/ms13/low_wall/brick/gray,
@@ -11627,7 +11622,7 @@
 "nAs" = (
 /obj/structure/table/ms13/low_wall/brick/gray,
 /obj/effect/turf_decal/weather/dirt,
-/turf/open/space/basic,
+/turf/open/floor/plating/ms13/ground/desert,
 /area/ms13/town)
 "nAt" = (
 /obj/structure/ms13/pipes/horizontal/brown,
@@ -12140,7 +12135,7 @@
 /obj/structure/window/fulltile/ms13/glass,
 /obj/structure/ms13/bars/rusty,
 /obj/structure/window/fulltile/ms13/glass,
-/turf/open/space/basic,
+/turf/open/floor/plating/ms13/ground/desert,
 /area/ms13/town)
 "ofz" = (
 /obj/effect/ai_node,
@@ -13355,7 +13350,7 @@
 /obj/structure/window/fulltile/ms13/glass,
 /obj/structure/ms13/barricade,
 /obj/effect/decal/cleanable/cobweb,
-/turf/open/space/basic,
+/turf/open/floor/plating/ms13/ground/desert,
 /area/ms13/town)
 "pEN" = (
 /obj/structure/railing/ms13/wood{
@@ -13803,11 +13798,6 @@
 	},
 /turf/open/floor/plating/ms13/ground/desertalt,
 /area/ms13/water_baron)
-"qgd" = (
-/obj/structure/table/ms13/low_wall/brick/gray,
-/obj/structure/window/fulltile/ms13/glass,
-/turf/open/space/basic,
-/area/ms13/underground/mountain)
 "qgf" = (
 /obj/structure/table/ms13/no_smooth/counter/wood,
 /turf/open/floor/ms13/tile/large/cafeteria,
@@ -14672,7 +14662,7 @@
 /obj/structure/window/fulltile/ms13/glass,
 /obj/effect/decal/cleanable/blood/splatter/over_window,
 /obj/structure/ms13/barricade,
-/turf/open/space/basic,
+/turf/open/floor/plating/ms13/ground/desert,
 /area/ms13/town)
 "qXj" = (
 /mob/living/basic/ms13/ghoul/brown,
@@ -15080,7 +15070,7 @@
 /obj/structure/window/fulltile/ms13/glass,
 /obj/structure/window/fulltile/ms13/glass,
 /obj/effect/spawner/random/structure/barricade,
-/turf/open/space/basic,
+/turf/open/floor/plating/ms13/ground/desert,
 /area/ms13/town)
 "rtp" = (
 /obj/item/crowbar/ms13,
@@ -15272,7 +15262,7 @@
 "rHA" = (
 /obj/structure/table/ms13/low_wall/brick/gray,
 /obj/structure/ms13/barricade,
-/turf/open/space/basic,
+/turf/open/floor/plating/ms13/ground/desert,
 /area/ms13/town)
 "rHS" = (
 /obj/structure/lattice/catwalk/ms13,
@@ -16173,7 +16163,7 @@
 /area/ms13/town)
 "sFz" = (
 /obj/structure/table/ms13/low_wall/brick/gray,
-/turf/open/space/basic,
+/turf/open/floor/plating/ms13/ground/desert,
 /area/ms13/town)
 "sFF" = (
 /obj/structure/closet/crate/ms13/woodcrate,
@@ -16840,9 +16830,9 @@
 /turf/open/floor/plating/ms13/ground/sidewalk,
 /area/ms13/desert)
 "trz" = (
+/obj/structure/window/fulltile/ms13/glass,
+/obj/structure/window/fulltile/ms13/glass,
 /obj/structure/table/ms13/low_wall/brick/gray,
-/obj/structure/window/fulltile/ms13/glass,
-/obj/structure/window/fulltile/ms13/glass,
 /turf/open/floor/ms13/tile/large/white,
 /area/ms13/town)
 "tsr" = (
@@ -17497,7 +17487,7 @@
 "uiv" = (
 /obj/structure/table/ms13/low_wall/brick,
 /obj/structure/curtain/bounty,
-/turf/open/space/basic,
+/turf/open/floor/plating/ms13/ground/desert,
 /area/ms13/town)
 "uiz" = (
 /obj/structure/sink/ms13{
@@ -20939,10 +20929,6 @@
 /obj/structure/bed/ms13/sleepingbag/green,
 /turf/open/floor/ms13/metal,
 /area/ms13/underground/mountain)
-"ykT" = (
-/obj/structure/table/ms13/low_wall/brick,
-/turf/open/space/basic,
-/area/ms13/town)
 "ylv" = (
 /obj/effect/decal/cleanable/glass{
 	dir = 8
@@ -20954,7 +20940,7 @@
 /obj/structure/table/ms13/low_wall/brick/gray,
 /obj/structure/window/fulltile/ms13/glass,
 /obj/structure/ms13/bars/rusty,
-/turf/open/space/basic,
+/turf/open/floor/plating/ms13/ground/desert,
 /area/ms13/town)
 "ymb" = (
 /obj/structure/chair/ms13/wood/padded{
@@ -204193,7 +204179,7 @@ oJj
 kUG
 kUG
 ngu
-qgd
+gjv
 dUH
 dUH
 adw
@@ -204545,7 +204531,7 @@ jLv
 kUG
 kUG
 gqJ
-qgd
+gjv
 dUH
 dUH
 adw
@@ -385455,7 +385441,7 @@ uHb
 uVx
 uVx
 bvs
-kbr
+xso
 nyQ
 ehg
 ehg
@@ -385807,7 +385793,7 @@ mvm
 uVx
 tAP
 uHb
-kbr
+xso
 nyQ
 ehg
 mic
@@ -386159,7 +386145,7 @@ iRN
 uVx
 uVx
 gso
-kbr
+xso
 nyQ
 ehg
 ehg
@@ -386511,7 +386497,7 @@ uVx
 uVx
 uVx
 bvs
-kbr
+xso
 nyQ
 ehg
 ehg
@@ -408015,7 +408001,7 @@ ejN
 ejN
 gAX
 jDp
-ykT
+aTn
 jDp
 uiv
 jDp
@@ -415395,7 +415381,7 @@ qqs
 uVx
 uVx
 bXA
-kbr
+xso
 ejN
 ejN
 rDs
@@ -415747,7 +415733,7 @@ nEe
 uVx
 uVx
 xYC
-kbr
+xso
 ejN
 ejN
 rDs
@@ -487894,7 +487880,7 @@ lMt
 lMt
 lMt
 lMt
-kbr
+xso
 iKL
 iKL
 iKL
@@ -488598,7 +488584,7 @@ lMt
 lMt
 lMt
 lMt
-kbr
+xso
 iKL
 iKL
 iKL
@@ -488946,9 +488932,9 @@ rph
 dbb
 dbb
 hGl
-kbr
+xso
 dbb
-kbr
+xso
 hGl
 dbb
 dbb
@@ -495985,9 +495971,9 @@ bkG
 bkG
 bkG
 dbb
-kbr
+xso
 dbb
-kbr
+xso
 dbb
 bkG
 bkG
@@ -496687,7 +496673,7 @@ bkG
 bkG
 bkG
 bkG
-kbr
+xso
 nvP
 nvP
 nvP
@@ -497391,7 +497377,7 @@ bkG
 bkG
 bkG
 bkG
-kbr
+xso
 nvP
 nvP
 nvP
