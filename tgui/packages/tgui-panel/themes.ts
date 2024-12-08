@@ -23,6 +23,7 @@ let setClientThemeTimer: NodeJS.Timeout;
  * It's painful but it works, and is the way Lummox suggested.
  */
 export const setClientTheme = (name) => {
+  name = 'dark';
   // Transmit once for fast updates and again in a little while in case we won
   // the race against statbrowser init.
   clearInterval(setClientThemeTimer);
