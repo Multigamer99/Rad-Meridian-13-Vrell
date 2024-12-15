@@ -4,17 +4,17 @@
 /datum/looping_sound/dust_storm
 	mid_sounds = 'mojave/modules/outdoor_effects/sound/weather_dust.ogg'
 	mid_length = 80 SECONDS
-	volume = 150
+	volume = 100
 
 /datum/looping_sound/rad_storm
 	mid_sounds = 'mojave/modules/outdoor_effects/sound/weather_rad.ogg'
 	mid_length = 110 SECONDS
-	volume = 150
+	volume = 100
 
 /datum/looping_sound/rain
 	mid_sounds = 'mojave/modules/outdoor_effects/sound/weather_rain.ogg'
 	mid_length = 40 SECONDS
-	volume = 150
+	volume = 100
 
 /datum/looping_sound/snow
 	mid_sounds = 'mojave/modules/outdoor_effects/sound/weather_snow.ogg'
