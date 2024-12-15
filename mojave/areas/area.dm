@@ -392,3 +392,4 @@
 	icon_state = "combatarena_tunnels"
 	outdoors = FALSE
 	atmosphere_sound = CAVE_ATMOSPHERE
+	

@@ -1,31 +1,19 @@
-#define COLD_WASTELAND_ATMOSPHERE list('mojave/sound/ms13/ambience/atmosphere/mammoth1.ogg', \
-						'mojave/sound/ms13/ambience/atmosphere/mammoth2.ogg', \
-						'mojave/sound/ms13/ambience/atmosphere/mammoth3.ogg', \
-						'mojave/sound/ms13/ambience/atmosphere/mammoth4.ogg', \
-						'mojave/sound/ms13/ambience/atmosphere/mammoth5.ogg')
-
-#define BUILDING_ATMOSPHERE list('mojave/sound/ms13/ambience/atmosphere/building1.ogg', \
-						'mojave/sound/ms13/ambience/atmosphere/building2.ogg', \
-						'mojave/sound/ms13/ambience/atmosphere/building3.ogg')
-
-#define BUNKER_ATMOSPHERE list('mojave/sound/ms13/ambience/atmosphere/bunker1.ogg', \
-						'mojave/sound/ms13/ambience/atmosphere/bunker2.ogg', \
-						'mojave/sound/ms13/ambience/atmosphere/bunker3.ogg')
-
-#define FOREST_ATMOSPHERE list('mojave/sound/ms13/ambience/atmosphere/forest1.ogg', \
-						'mojave/sound/ms13/ambience/atmosphere/forest2.ogg', \
-						'mojave/sound/ms13/ambience/atmosphere/forest3.ogg')
-
-#define INDUSTRIAL_ATMOSPHERE list('mojave/sound/ms13/ambience/atmosphere/industrial1.ogg', \
-						'mojave/sound/ms13/ambience/atmosphere/industrial2.ogg', \
-						'mojave/sound/ms13/ambience/atmosphere/industrial3.ogg', \
-						'mojave/sound/ms13/ambience/atmosphere/industrial4.ogg')
-
-#define MILLITARY_ATMOSPHERE list('mojave/sound/ms13/ambience/atmosphere/millitary1.ogg')
-
-#define CAVE_ATMOSPHERE list('mojave/sound/ms13/ambience/atmosphere/cave1.ogg')
-
-#define SEWER_ATMOSPHERE list('mojave/sound/ms13/ambience/atmosphere/sewer1.ogg', \
-						'mojave/sound/ms13/ambience/atmosphere/sewer2.ogg')
-
+//Worked on by Blutz 12/12/2024
+#define COLD_WASTELAND_ATMOSPHERE list('mojave/sound/ms13/ambience/atmosphere/mammoth1.ogg')
+//Possibly the cold areas of the map, Not tested
+#define BUILDING_ATMOSPHERE list('mojave/sound/ms13music/fo2_world.ogg')
+//Decent placeholder, i'm happy with it
+#define BUNKER_ATMOSPHERE list('mojave/sound/ms13music/fo2_vats.ogg')
+//Okay
+#define FOREST_ATMOSPHERE list('mojave/sound/ms13/ambience/atmosphere/forest2.ogg')
+//This is fine for now
+#define INDUSTRIAL_ATMOSPHERE list('mojave/sound/ms13music/fo2_necropolis.ogg')
+//Okay, not great
+#define MILLITARY_ATMOSPHERE list('mojave/sound/ms13music/fo2_outpost.ogg')
+//Okay
+#define CAVE_ATMOSPHERE list('mojave/sound/ms13music/13CARVRN.ogg')
+//Happy with
+#define SEWER_ATMOSPHERE list('mojave/sound/ms13music/fo2_tunnels.ogg')
+//Happy with
 #define VAULT_ATMOSPHERE list('mojave/sound/ms13/ambience/atmosphere/vault1.ogg')
+

@@ -1,5 +1,5 @@
-#define GENERIC_AMBIENCE list('mojave/sound/ms13/ambience/sounds/ambigen_1.ogg', \
-							'mojave/sound/ms13/ambience/sounds/ambigen_2.ogg', \
+#define GENERIC_AMBIENCE list('mojave/sound/ms13music/07DESERT.ogg')
+	/*						'mojave/sound/ms13/ambience/sounds/ambigen_2.ogg', \
 							'mojave/sound/ms13/ambience/sounds/ambigen_3.ogg', \
 							'mojave/sound/ms13/ambience/sounds/ambigen_4.ogg', \
 							'mojave/sound/ms13/ambience/sounds/ambigen_5.ogg', \
@@ -16,4 +16,7 @@
 							'mojave/sound/ms13/ambience/sounds/ambigen_16.ogg', \
 							'mojave/sound/ms13/ambience/sounds/ambigen_17.ogg', \
 							'mojave/sound/ms13/ambience/sounds/ambigen_18.ogg', \
-							'mojave/sound/ms13/ambience/sounds/ambigen_19.ogg')
+							'mojave/sound/ms13/ambience/sounds/ambigen_19.ogg'), 50, 0),
+	*/
+
+	//Blutz Commented this out as a test / hotfix on 12/12/24
