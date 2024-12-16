@@ -5,6 +5,9 @@
 	. = ..()
 	flick(icon_state + "_anim", src)*/ //MS13 Edit - We don't have animated ghost icons yet - Hekzder
 
+//Disabling extra menu options while ghosting.
+//Commenting this all out is satisfactory for my purposes, Blutz.
+/*
 /atom/movable/screen/ghost/spawners_menu
 	name = "Spawners menu"
 	icon_state = "spawners"
@@ -53,6 +56,8 @@
 	var/mob/dead/observer/observer = usr
 	observer.open_minigames_menu()
 
+
+
 /datum/hud/ghost/New(mob/owner)
 	..()
 	var/atom/movable/screen/using
@@ -92,6 +97,8 @@
 	using.icon = ui_style
 	using.hud = src
 	static_inventory += using
+*/
+//HUD
 
 /datum/hud/ghost/show_hud(version = 0, mob/viewmob)
 	// don't show this HUD if observing; show the HUD of the observee
