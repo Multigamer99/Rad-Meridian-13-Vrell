@@ -33,7 +33,7 @@
 		alived.weather_blindness_amount = 0
 		return ..()
 
-	var/amount_to_wipe = 50 < alived.weather_blindness_amount ? 50 : alived.weather_blindness_amount
+	var/amount_to_wipe = STORM_MAXIMUM_BLINDNESS / 2 < alived.weather_blindness_amount ? STORM_MAXIMUM_BLINDNESS / 2 : alived.weather_blindness_amount
 	alived.weather_blindness_amount -= amount_to_wipe
 	alived.adjust_blurriness(-amount_to_wipe)
 	message = "wipes their eyes."
