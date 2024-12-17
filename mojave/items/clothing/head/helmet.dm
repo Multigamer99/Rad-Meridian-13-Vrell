@@ -1,3 +1,4 @@
+//Earmarked by Blutz
 /obj/item/clothing/head/helmet/ms13
 	name = "generic ms13 helmet"
 	desc = "You shouldn't be seeing this helmet."
