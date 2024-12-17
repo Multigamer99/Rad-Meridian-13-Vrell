@@ -1,9 +1,12 @@
-		//MOJAVE SUN PREFERENCES DIRECTORY (CHARACTER)//
-	//ie shit that goes directly on the right of the player//
-//Put its in its own file so it can be re-arranged #weh8TGUI2013//
+//Rad Meridian Preferences Directory, Formally Chucks. (Character Setup)
+//What: Options displayed to the right of the character preview window
+//Narrative: To create the look and feel we want, the options for underwear and corvega backpacks were removed.
+//Cont. These things were commented out incase a future dev team decides to utilize them. Good luck! -Blutz
+
+//Old Comment: Put its in its own file so it can be re-arranged #weh8TGUI2013
+
 
 //Hairstyle
-
 /datum/preference/choiced/hairstyle
 	savefile_key = "hairstyle_name"
 	savefile_identifier = PREFERENCE_CHARACTER
@@ -23,7 +26,6 @@
 	return data
 
 //Facial Hairstyle
-
 /datum/preference/choiced/facial_hairstyle
 	savefile_key = "facial_style_name"
 	savefile_identifier = PREFERENCE_CHARACTER
@@ -50,8 +52,8 @@
 	else
 		return TRUE
 
-//Undershirt
-
+/*
+//Undershirt - Commenting out for a test. Test passed. -Blutz
 /datum/preference/choiced/undershirt
 	savefile_key = "undershirt"
 	savefile_identifier = PREFERENCE_CHARACTER
@@ -86,9 +88,9 @@
 
 /datum/preference/choiced/undershirt/apply_to_human(mob/living/carbon/human/target, value)
 	target.undershirt = value
-
-//Underwear
-
+*/
+/*
+//Underwear - Commenting out for a test. Test passed. -Blutz
 /datum/preference/choiced/underwear
 	savefile_key = "underwear"
 	savefile_identifier = PREFERENCE_CHARACTER
@@ -114,9 +116,9 @@
 	var/list/data = ..()
 
 	return data
-
-//Socks
-
+*/
+/*
+//Socks - Commenting out for a test. Test passed. -Blutz
 /datum/preference/choiced/socks
 	savefile_key = "socks"
 	savefile_identifier = PREFERENCE_CHARACTER
@@ -129,15 +131,17 @@
 
 /datum/preference/choiced/socks/apply_to_human(mob/living/carbon/human/target, value)
 	target.socks = value
-
-//Backpack/Storage
+*/
+//Backpack/Storage - Altered for options. Work Perfectly. -Blutz
 
 #define L_SATCHEL "Leather satchel"
 #define L_BACKPACK "Leather backpack"
+/*
 #define CORVBAG "Corvega backpack"
 #define COLABAG "Nuka Cola backpack"
 
-GLOBAL_LIST_INIT(backpacklist, list(L_SATCHEL, L_BACKPACK, CORVBAG, COLABAG))
+*/
+GLOBAL_LIST_INIT(backpacklist, list(L_SATCHEL, L_BACKPACK)) //, CORVBAG, COLABAG))
 
 /datum/preference/choiced/backpack
 	savefile_key = "backpack"
@@ -151,8 +155,8 @@ GLOBAL_LIST_INIT(backpacklist, list(L_SATCHEL, L_BACKPACK, CORVBAG, COLABAG))
 
 	values[L_SATCHEL] = /obj/item/storage/ms13/satchel
 	values[L_BACKPACK] = /obj/item/storage/ms13/leather_backpack
-	values[CORVBAG] = /obj/item/storage/ms13/corvega_bag
-	values[COLABAG] = /obj/item/storage/ms13/nuka_bag
+/*	values[CORVBAG] = /obj/item/storage/ms13/corvega_bag
+	values[COLABAG] = /obj/item/storage/ms13/nuka_bag  */
 	return values
 
 /datum/preference/choiced/backpack/apply_to_human(mob/living/carbon/human/target, value)
@@ -167,9 +171,9 @@ GLOBAL_LIST_INIT(backpacklist, list(L_SATCHEL, L_BACKPACK, CORVBAG, COLABAG))
 				back = /obj/item/storage/ms13/satchel
 			if(L_BACKPACK)
 				back = /obj/item/storage/ms13/leather_backpack
-			if(CORVBAG)
+/*			if(CORVBAG)
 				back = /obj/item/storage/ms13/corvega_bag
 			if(COLABAG)
-				back = /obj/item/storage/ms13/nuka_bag
+				back = /obj/item/storage/ms13/nuka_bag  */
 	else
 		back = back //Forced backpack

@@ -22,9 +22,11 @@
 
 	return values
 
+//Commented this out for a test. -Blutz
+
 // Male Voices ---- We actually need to split these up because using the proc that gets possible selections actually DOESN'T UPDATE ON THE FLY, and thus putting this into a singular action... currently isn't possible. awesome, TG.
 // Luckily you don't really notice anything jarring in-game but... If you're here.... YOU KNOW...
-
+/*
 /datum/preference/choiced/voice_type
 	savefile_key = "voice_type"
 	savefile_identifier = PREFERENCE_CHARACTER
@@ -73,3 +75,4 @@
 	if(target.gender == MALE)
 		return
 	target.voice_type = value
+*/

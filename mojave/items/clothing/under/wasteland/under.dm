@@ -1,3 +1,4 @@
+//Earmarked by Blutz
 /obj/item/clothing/under/ms13
 	fitted = NO_FEMALE_UNIFORM
 	///femstatics destroyed (Also stops it going invisible when someone dosent make a thottiana version.)
