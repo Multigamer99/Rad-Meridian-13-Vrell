@@ -248,7 +248,7 @@
 			return "Middle-Aged"
 		if(24 to 40)
 			return "" //not necessary because this is basically the most common age range
-		if(18 to 24)
+		if(20 to 24)
 			return "Young"
 		else
 			return "Puzzling"
@@ -274,12 +274,8 @@
 	var/obscured = check_obscured_slots()
 	var/skipface = (wear_mask && (wear_mask.flags_inv & HIDEFACE)) || (head && (head.flags_inv & HIDEFACE))
 	var/hide_features = (obscured & ITEM_SLOT_ICLOTHING) && skipface
-
-	var/visible_weight
-	if((fatness == FATNESS_OBESE) && !hide_features)
-		visible_weight = "[fatness_adjective || "Fat"] "
 	var/visible_adjective
-	if(generic_adjective && !hide_features && ((fatness != FATNESS_OBESE) || !(generic_adjective in GLOB.fatness_incompatible_adjectives)))
+	if(generic_adjective && !hide_features && ((generic_adjective in GLOB.fatness_incompatible_adjectives)))
 		visible_adjective = "[generic_adjective] "
 	var/visible_age = get_age()
 	if(visible_age)
@@ -291,7 +287,9 @@
 	else
 		visible_skin = "[dna.species.name] "
 	var/visible_gender = get_gender()
-	var/final_string = "[visible_weight][visible_adjective][visible_age][visible_skin][visible_gender]"
+	var/final_string = "[visible_adjective][visible_age][visible_skin][visible_gender]"
 	if(prefixed)
 		final_string = "\A [final_string]"
 	return lowercase ? lowertext(final_string) : final_string
+
+

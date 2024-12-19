@@ -273,16 +273,16 @@
 		. += "[PA.get_examine_string(user, TRUE)]"
 	. += "Alt+left click this power armor to get into and out of it."
 	var/mob/living/carbon/carbon_user = user
-	if(istype(carbon_user) && (carbon_user.fatness == FATNESS_OBESE))
-		. += span_warning("Your fat ass probably won't fit inside.")
-
+	if(istype(carbon_user))
+		. += span_warning("The suit locks onto your body.")
+/* //Can be deleted. -Blutz
 /obj/item/clothing/suit/space/hardsuit/ms13/power_armor/mob_can_equip(mob/living/M, mob/living/equipper, slot, disable_warning, bypass_equip_delay_self)
 	if((slot == ITEM_SLOT_OCLOTHING) && no_fatties && iscarbon(M))
 		var/mob/living/carbon/carbon_fatass = M
 		if(carbon_fatass.fatness == FATNESS_OBESE)
 			return FALSE
 	return ..()
-
+*/
 //We want to be able to strip the PA as usual but also have the benefits of NO_DROP to disallow stuff like drag clicking PA into hand slot
 /obj/item/clothing/suit/space/hardsuit/ms13/power_armor/canStrip(mob/stripper, mob/owner)
 	return !(item_flags & ABSTRACT)
@@ -561,8 +561,8 @@
 
 	if(!CheckEquippedClothing(user) || get_dist(user, src) > 1 || link_to)
 		return FALSE
-	if(user.fatness == FATNESS_OBESE)
-		to_chat(user, span_warning("Your fat ass is too huge to fit in."))
+/*	if(user.fatness == FATNESS_OBESE) //Can be deleted. -Blutz
+		to_chat(user, span_warning("Your fat ass is too huge to fit in.")) */
 		return FALSE
 	to_chat(user, "You begin entering the [src].")
 	if(do_after(user, 8 SECONDS, user) && CheckEquippedClothing(user) && density)
