@@ -811,6 +811,9 @@ GLOBAL_LIST_EMPTY(features_by_species)
 				var/mutable_appearance/markings_l_leg_overlay = mutable_appearance(markings.icon, "[markings.icon_state]_l_leg", -BODY_LAYER)
 				standing += markings_l_leg_overlay
 
+//Blutz: Not required for what we are doing on Rad Meridian. Leaving this in incase somebody wants to use underwear.
+/*
+
 	//Underwear, Undershirts & Socks
 	if(!(NO_UNDERWEAR in species_traits))
 		if(species_human.underwear)
@@ -824,10 +827,10 @@ GLOBAL_LIST_EMPTY(features_by_species)
 					underwear_overlay.color = species_human.underwear_color
 				standing += underwear_overlay
 
-/*		if(species_human.undershirt)
+		if(species_human.undershirt)
 			var/datum/sprite_accessory/undershirt/undershirt = GLOB.undershirt_list[species_human.undershirt]
 			if(undershirt)
-			standing += mutable_appearance(undershirt.icon, undershirt.icon_state, -BODY_LAYER) */
+			standing += mutable_appearance(undershirt.icon, undershirt.icon_state, -BODY_LAYER) 
 
 		if(species_human.socks && species_human.num_legs >= 2 && !(DIGITIGRADE in species_traits))
 			var/datum/sprite_accessory/socks/socks = GLOB.socks_list[species_human.socks]
@@ -839,7 +842,7 @@ GLOBAL_LIST_EMPTY(features_by_species)
 
 	species_human.apply_overlay(BODY_LAYER)
 	handle_mutant_bodyparts(species_human)
-
+*/
 /**
  * Handles the mutant bodyparts of a human
  *

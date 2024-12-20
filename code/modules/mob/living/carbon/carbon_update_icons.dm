@@ -279,11 +279,10 @@
 	var/draw_features = !HAS_TRAIT(src, TRAIT_INVISIBLE_MAN)
 	for(var/X in bodyparts)
 		var/obj/item/bodypart/BP = X
-		var/list/bp_icons = BP.get_limb_icon(draw_external_organs = draw_features)
-		if(!LAZYLEN(bp_icons))
-			continue
-		new_limbs += bp_icons
-/*	if(new_limbs.len) */
+		new_limbs += BP.get_limb_icon(draw_external_organs = draw_features)
+	if(new_limbs.len)
+		overlays_standing[BODYPARTS_LAYER] = new_limbs
+		limb_icon_cache[icon_render_key] = new_limbs
 	apply_overlay(BODYPARTS_LAYER)
 	update_damage_overlays()
 	update_wound_overlays()
@@ -327,10 +326,9 @@
 /mob/living/carbon/proc/load_limb_from_cache()
 	if(limb_icon_cache[icon_render_key])
 		remove_overlay(BODYPARTS_LAYER)
-		apply_overlay(BODYPARTS_LAYER)
-	update_damage_overlays()
-
-// MOJAVE SUN EDIT BEGIN
+		overlays_standing[BODYPARTS_LAYER] = limb_icon_cache[icon_render_key]
+		apply_overlay(BODYPARTS_LAYER) //
+	update_damage_overlays() //
 
 //Updating overlays related to on bodypart bandages
 /mob/living/carbon/proc/update_bandage_overlays()
