@@ -29,6 +29,8 @@
 	falloff_distance = 3
 	falloff_exponent = 5
 
+//Terrible sound, much hate. -Blutz
+
 /datum/looping_sound/ms13/neonsign
 	start_sound = 'sound/machines/click.ogg'
 	mid_sounds = list('mojave/sound/ms13machines/neonloop.ogg'=1)
@@ -41,3 +43,4 @@
 
 /datum/looping_sound/ms13/neonsign/busted
 	mid_sounds = list('mojave/sound/ms13machines/neonloop.ogg'=1, 'mojave/sound/ms13machines/neonloopdysf.ogg'=0.5)
+
