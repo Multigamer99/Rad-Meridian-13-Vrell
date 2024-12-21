@@ -259,10 +259,10 @@
 			playsound(C, pick(SMOKING_SMOLDER_SOUNDS), 90)
 		if(src == C.wear_mask)
 			L.smoking = TRUE
-			if(prob(10) && C.gender == MALE || C.gender == PLURAL)
+/*			if(prob(10) && C.gender == MALE || C.gender == PLURAL)
 				playsound(C, pick(SMOKING_INHALE_MALE_SOUNDS), 90)
 			if(prob(10) && C.gender == FEMALE)
-				playsound(C, pick(SMOKING_INHALE_FEMALE_SOUNDS), 90)
+				playsound(C, pick(SMOKING_INHALE_FEMALE_SOUNDS), 90) */
 			if((reagents && reagents.total_volume) && (nextdragtime <= world.time))
 				nextdragtime = world.time + dragtime
 				handle_reagents()
