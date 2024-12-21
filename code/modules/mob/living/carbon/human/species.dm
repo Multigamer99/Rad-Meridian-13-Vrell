@@ -811,6 +811,9 @@ GLOBAL_LIST_EMPTY(features_by_species)
 				var/mutable_appearance/markings_l_leg_overlay = mutable_appearance(markings.icon, "[markings.icon_state]_l_leg", -BODY_LAYER)
 				standing += markings_l_leg_overlay
 
+//Blutz: Not required for what we are doing on Rad Meridian. Leaving this in incase somebody wants to use underwear.
+/*
+
 	//Underwear, Undershirts & Socks
 	if(!(NO_UNDERWEAR in species_traits))
 		if(species_human.underwear)
@@ -822,30 +825,24 @@ GLOBAL_LIST_EMPTY(features_by_species)
 				underwear_overlay = mutable_appearance(underwear.icon, underwear.icon_state, -BODY_LAYER)
 				if(!underwear.use_static)
 					underwear_overlay.color = species_human.underwear_color
-				underwear_overlay = species_human.apply_fatness_filter(underwear_overlay, TRUE)
 				standing += underwear_overlay
 
 		if(species_human.undershirt)
 			var/datum/sprite_accessory/undershirt/undershirt = GLOB.undershirt_list[species_human.undershirt]
 			if(undershirt)
-				var/mutable_appearance/undershirt_overlay = mutable_appearance(undershirt.icon, undershirt.icon_state, -BODY_LAYER)
-				undershirt_overlay = species_human.apply_fatness_filter(undershirt_overlay, TRUE)
-				standing += undershirt_overlay
-				//MOJAVE SUN EDIT END - Gender Prefs
+			standing += mutable_appearance(undershirt.icon, undershirt.icon_state, -BODY_LAYER) 
 
 		if(species_human.socks && species_human.num_legs >= 2 && !(DIGITIGRADE in species_traits))
 			var/datum/sprite_accessory/socks/socks = GLOB.socks_list[species_human.socks]
 			if(socks)
-				var/mutable_appearance/socks_overlay = mutable_appearance(socks.icon, socks.icon_state, -BODY_LAYER)
-				socks_overlay = species_human.apply_fatness_filter(socks_overlay, TRUE)
-				standing += socks_overlay
+				standing += mutable_appearance(socks.icon, socks.icon_state, -BODY_LAYER)
 
 	if(standing.len)
 		species_human.overlays_standing[BODY_LAYER] = standing
 
 	species_human.apply_overlay(BODY_LAYER)
 	handle_mutant_bodyparts(species_human)
-
+*/
 /**
  * Handles the mutant bodyparts of a human
  *

@@ -18,6 +18,7 @@
 	emote_see = list("shakes its head.")
 	attack_verb_continuous = "headbutts"
 	attack_verb_simple = "headbutt"
+	speak_chance = 5
 	turns_per_move = 3
 	butcher_results = list(/obj/item/ms13/hide/brahmin = 1, /obj/item/food/meat/slab/ms13/carcass/large/brahmin/front = 1, /obj/item/food/meat/slab/ms13/carcass/large/brahmin/back = 1, /obj/item/ms13/animalitem/brahmin/horns = 2)//brahmin meat, tongue, horns, hide
 	attack_sound = list('mojave/sound/ms13npc/brahmin_attack1.ogg', 'mojave/sound/ms13npc/brahmin_attack2.ogg')
@@ -51,13 +52,13 @@
 	name = "brahmin calf"
 	desc = "Mutated cattle, renowed over the wastes for their labor, milk, fertilizer, leather, and meat."
 	icon_state = "brahmin"
-	speak = list("eee","ooo")
+	speak = list("Rmmm","moo")
 	speak_emote = list("sniffs","grimbles")
 	emote_hear = list("brays.")
 	emote_see = list("shakes its head.")
 	attack_verb_continuous = "taps"
 	attack_verb_simple = "tap"
-	speak_chance = 20
+	speak_chance = 5
 	turns_per_move = 3
 	melee_damage_lower = 1
 	melee_damage_upper = 1
@@ -81,6 +82,7 @@
 	emote_see = list("shakes its head.")
 	attack_verb_continuous = "headbutts"
 	attack_verb_simple = "headbutt"
+	speak_chance = 5
 	turns_per_move = 1
 	butcher_results = list(/obj/item/ms13/hide/brahmiluff = 1, /obj/item/food/meat/slab/ms13/carcass/large/brahmiluff = 1, /obj/item/ms13/animalitem/brahmiluff/horns = 2)//brahmiluff meat, tongue, horns, hide, fur
 	health = 200
@@ -168,7 +170,7 @@
 	emote_see = list("flobs")
 	attack_verb_continuous = "bites"
 	attack_verb_simple = "bite"
-	speak_chance = 30
+	speak_chance = 515
 	turns_per_move = 5
 	attack_sound = 'sound/weapons/bite.ogg'
 	health = 100
@@ -193,7 +195,7 @@
 	emote_see = list("flobs")
 	attack_verb_continuous = "nips"
 	attack_verb_simple = "nip"
-	speak_chance = 30
+	speak_chance = 15
 	turns_per_move = 5
 	melee_damage_lower = 0
 	melee_damage_upper = 0
@@ -220,7 +222,7 @@
 	emote_see = list("scratches")
 	attack_verb_continuous = "bites"
 	attack_verb_simple = "bite"
-	speak_chance = 30
+	speak_chance = 15
 	turns_per_move = 5
 	attack_sound = 'sound/weapons/bite.ogg'
 	health = 100
@@ -248,7 +250,7 @@
 	emote_see = list("scratches")
 	attack_verb_continuous = "nips"
 	attack_verb_simple = "nip"
-	speak_chance = 30
+	speak_chance = 15
 	turns_per_move = 5
 	melee_damage_lower = 0
 	melee_damage_upper = 0
@@ -884,10 +886,11 @@
 
 //Different sound effect, no destruction
 /datum/action/cooldown/mob_cooldown/charge/hellpig/on_moved(atom/source)
-	playsound(source, pick('mojave/sound/ms13effects/footsteps/ms13heavyfootstep_1.wav', 'mojave/sound/ms13effects/footsteps/ms13heavyfootstep_2.wav'), 100, TRUE, 2, TRUE)
+	playsound(source, pick('mojave/sound/ms13effects/footsteps/ms13heavyfootstep_1.ogg', 'mojave/sound/ms13effects/footsteps/ms13heavyfootstep_2.ogg'), 100, TRUE, 2, TRUE)
 	//INVOKE_ASYNC(src, PROC_REF(DestroySurroundings), source)
 
 /datum/action/cooldown/mob_cooldown/charge/hellpig/Activate(atom/target_atom)
 
 	playsound(get_turf(owner), pick('mojave/sound/ms13npc/hellpig_attack1.ogg', 'mojave/sound/ms13npc/hellpig_attack2.ogg', 'mojave/sound/ms13npc/hellpig_attack3.ogg'), 100, TRUE, 2, TRUE)
 	..()
+//
